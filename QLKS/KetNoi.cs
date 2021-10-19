@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;              // Khai báo thư viện
+using System.Data;              
 using System.Data.SqlClient; // Khai báo thư viện
 namespace QLKS
 {
@@ -13,14 +13,15 @@ namespace QLKS
         public SqlCommand cmd;
         public DataTable dta;
         public SqlDataAdapter ada;
-
+       
         public void KetNoi_Dulieu()
         {
             string strKetNoi = @"Data Source=LAPTOP-OGIL9U3L\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
-
+            
             cnn = new SqlConnection(strKetNoi);
             cnn.Open();
         }
+     
         public void HuyKetNoi()
         {
             if (cnn.State == ConnectionState.Open)
