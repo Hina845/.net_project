@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLoaiPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoaiPhong.Designer.cs">
+      <DependentUpon>FrmLoaiPhong.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLKSDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmLoaiPhong.resx">
+      <DependentUpon>FrmLoaiPhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
