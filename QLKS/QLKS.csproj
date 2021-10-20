@@ -76,6 +76,12 @@
     <Compile Include="Frm_DICHVU.Designer.cs">
       <DependentUpon>Frm_DICHVU.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_KHACHHANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_KHACHHANG.Designer.cs">
+      <DependentUpon>Frm_KHACHHANG.cs</DependentUpon>
+    </Compile>
     <Compile Include="KetNoi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -95,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DICHVU.resx">
       <DependentUpon>Frm_DICHVU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_KHACHHANG.resx">
+      <DependentUpon>Frm_KHACHHANG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
