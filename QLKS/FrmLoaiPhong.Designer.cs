@@ -147,7 +147,17 @@ namespace QLKS
             // txtgia
             // 
             this.txtgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgia.Increment = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.txtgia.Location = new System.Drawing.Point(209, 200);
+            this.txtgia.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
             this.txtgia.Name = "txtgia";
             this.txtgia.Size = new System.Drawing.Size(492, 29);
             this.txtgia.TabIndex = 3;

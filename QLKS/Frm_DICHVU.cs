@@ -39,6 +39,8 @@ namespace QLKS
         }
         private void Frm_DICHVU_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'qLKSDataSet.CHI_TIET_SU_DUNG_DV' table. You can move, or remove it, as needed.
+            this.cHI_TIET_SU_DUNG_DVTableAdapter.Fill(this.qLKSDataSet.CHI_TIET_SU_DUNG_DV);
             // TODO: This line of code loads data into the 'qLKSDataSet.DICH_VU' table. You can move, or remove it, as needed.
             this.dICH_VUTableAdapter.Fill(this.qLKSDataSet.DICH_VU);
             
