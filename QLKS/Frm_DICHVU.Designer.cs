@@ -40,18 +40,15 @@ namespace QLKS
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Thoat = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.qLKSDataSet = new QLKS.QLKSDataSet();
             this.dICHVUBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLKSDataSet = new QLKS.QLKSDataSet();
             this.dICH_VUTableAdapter = new QLKS.QLKSDataSetTableAdapters.DICH_VUTableAdapter();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tENDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gIADataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.txt_Gia = new System.Windows.Forms.TextBox();
             this.txt_Ten = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dICHVUBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -143,13 +140,7 @@ namespace QLKS
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.tENDataGridViewTextBoxColumn,
-            this.gIADataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.dICHVUBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(95, 222);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
@@ -158,43 +149,19 @@ namespace QLKS
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // qLKSDataSet
-            // 
-            this.qLKSDataSet.DataSetName = "QLKSDataSet";
-            this.qLKSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // dICHVUBindingSource
             // 
             this.dICHVUBindingSource.DataMember = "DICH_VU";
             this.dICHVUBindingSource.DataSource = this.qLKSDataSet;
             // 
+            // qLKSDataSet
+            // 
+            this.qLKSDataSet.DataSetName = "QLKSDataSet";
+            this.qLKSDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dICH_VUTableAdapter
             // 
             this.dICH_VUTableAdapter.ClearBeforeFill = true;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // tENDataGridViewTextBoxColumn
-            // 
-            this.tENDataGridViewTextBoxColumn.DataPropertyName = "TEN";
-            this.tENDataGridViewTextBoxColumn.HeaderText = "TEN";
-            this.tENDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.tENDataGridViewTextBoxColumn.Name = "tENDataGridViewTextBoxColumn";
-            this.tENDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // gIADataGridViewTextBoxColumn
-            // 
-            this.gIADataGridViewTextBoxColumn.DataPropertyName = "GIA";
-            this.gIADataGridViewTextBoxColumn.HeaderText = "GIA";
-            this.gIADataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.gIADataGridViewTextBoxColumn.Name = "gIADataGridViewTextBoxColumn";
-            this.gIADataGridViewTextBoxColumn.Width = 150;
             // 
             // txt_ID
             // 
@@ -239,8 +206,8 @@ namespace QLKS
             this.Text = "Frm_DICHVU";
             this.Load += new System.EventHandler(this.Frm_DICHVU_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dICHVUBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -261,9 +228,6 @@ namespace QLKS
         private QLKSDataSet qLKSDataSet;
         private System.Windows.Forms.BindingSource dICHVUBindingSource;
         private QLKSDataSetTableAdapters.DICH_VUTableAdapter dICH_VUTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tENDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gIADataGridViewTextBoxColumn;
         private System.Windows.Forms.TextBox txt_ID;
         private System.Windows.Forms.TextBox txt_Gia;
         private System.Windows.Forms.TextBox txt_Ten;
