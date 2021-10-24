@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormChiTietThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChiTietThietBi.Designer.cs">
+      <DependentUpon>FormChiTietThietBi.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLoaiPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLKSDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormChiTietThietBi.resx">
+      <DependentUpon>FormChiTietThietBi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLoaiPhong.resx">
       <DependentUpon>FrmLoaiPhong.cs</DependentUpon>
     </EmbeddedResource>

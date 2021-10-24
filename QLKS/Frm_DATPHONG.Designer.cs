@@ -42,17 +42,17 @@ namespace QLKS
             this.txt_datphong = new System.Windows.Forms.NumericUpDown();
             this.txt_songuoi = new System.Windows.Forms.NumericUpDown();
             this.txt_sophong = new System.Windows.Forms.NumericUpDown();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txt_ngaydat = new System.Windows.Forms.DateTimePicker();
+            this.txt_ngayden = new System.Windows.Forms.DateTimePicker();
+            this.txt_ngaydi = new System.Windows.Forms.DateTimePicker();
+            this.txt_nhanvienthuchien = new System.Windows.Forms.NumericUpDown();
             this.btn_chitietdatphong = new System.Windows.Forms.Button();
             this.btn_thoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.txt_khachang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_datphong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_songuoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_sophong)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_nhanvienthuchien)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -149,7 +149,7 @@ namespace QLKS
             // txt_khachang
             // 
             this.txt_khachang.Location = new System.Drawing.Point(119, 63);
-            this.txt_khachang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_khachang.Margin = new System.Windows.Forms.Padding(2);
             this.txt_khachang.Name = "txt_khachang";
             this.txt_khachang.Size = new System.Drawing.Size(80, 20);
             this.txt_khachang.TabIndex = 9;
@@ -157,7 +157,7 @@ namespace QLKS
             // txt_datphong
             // 
             this.txt_datphong.Location = new System.Drawing.Point(119, 84);
-            this.txt_datphong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_datphong.Margin = new System.Windows.Forms.Padding(2);
             this.txt_datphong.Name = "txt_datphong";
             this.txt_datphong.Size = new System.Drawing.Size(80, 20);
             this.txt_datphong.TabIndex = 10;
@@ -165,7 +165,7 @@ namespace QLKS
             // txt_songuoi
             // 
             this.txt_songuoi.Location = new System.Drawing.Point(119, 107);
-            this.txt_songuoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_songuoi.Margin = new System.Windows.Forms.Padding(2);
             this.txt_songuoi.Name = "txt_songuoi";
             this.txt_songuoi.Size = new System.Drawing.Size(80, 20);
             this.txt_songuoi.TabIndex = 11;
@@ -173,60 +173,57 @@ namespace QLKS
             // txt_sophong
             // 
             this.txt_sophong.Location = new System.Drawing.Point(119, 128);
-            this.txt_sophong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_sophong.Margin = new System.Windows.Forms.Padding(2);
             this.txt_sophong.Name = "txt_sophong";
             this.txt_sophong.Size = new System.Drawing.Size(80, 20);
             this.txt_sophong.TabIndex = 12;
             // 
-            // dateTimePicker1
+            // txt_ngaydat
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(293, 64);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(77, 20);
-            this.dateTimePicker1.TabIndex = 13;
+            this.txt_ngaydat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_ngaydat.Location = new System.Drawing.Point(304, 64);
+            this.txt_ngaydat.Name = "txt_ngaydat";
+            this.txt_ngaydat.Size = new System.Drawing.Size(113, 20);
+            this.txt_ngaydat.TabIndex = 13;
             // 
-            // dateTimePicker2
+            // txt_ngayden
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(293, 84);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(77, 20);
-            this.dateTimePicker2.TabIndex = 14;
+            this.txt_ngayden.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_ngayden.Location = new System.Drawing.Point(304, 87);
+            this.txt_ngayden.Name = "txt_ngayden";
+            this.txt_ngayden.Size = new System.Drawing.Size(113, 20);
+            this.txt_ngayden.TabIndex = 14;
             // 
-            // dateTimePicker3
+            // txt_ngaydi
             // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker3.Location = new System.Drawing.Point(293, 105);
-            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(77, 20);
-            this.dateTimePicker3.TabIndex = 15;
+            this.txt_ngaydi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txt_ngaydi.Location = new System.Drawing.Point(304, 109);
+            this.txt_ngaydi.Name = "txt_ngaydi";
+            this.txt_ngaydi.Size = new System.Drawing.Size(113, 20);
+            this.txt_ngaydi.TabIndex = 15;
             // 
-            // numericUpDown1
+            // txt_nhanvienthuchien
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(325, 128);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(43, 20);
-            this.numericUpDown1.TabIndex = 16;
+            this.txt_nhanvienthuchien.Location = new System.Drawing.Point(353, 130);
+            this.txt_nhanvienthuchien.Name = "txt_nhanvienthuchien";
+            this.txt_nhanvienthuchien.Size = new System.Drawing.Size(64, 20);
+            this.txt_nhanvienthuchien.TabIndex = 16;
             // 
             // btn_chitietdatphong
             // 
-            this.btn_chitietdatphong.Location = new System.Drawing.Point(86, 174);
-            this.btn_chitietdatphong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_chitietdatphong.Location = new System.Drawing.Point(119, 178);
+            this.btn_chitietdatphong.Margin = new System.Windows.Forms.Padding(2);
             this.btn_chitietdatphong.Name = "btn_chitietdatphong";
             this.btn_chitietdatphong.Size = new System.Drawing.Size(101, 26);
             this.btn_chitietdatphong.TabIndex = 17;
             this.btn_chitietdatphong.Text = "Chi tiết đặt phòng";
             this.btn_chitietdatphong.UseVisualStyleBackColor = true;
+            this.btn_chitietdatphong.Click += new System.EventHandler(this.btn_chitietdatphong_Click);
             // 
             // btn_thoat
             // 
-            this.btn_thoat.Location = new System.Drawing.Point(203, 174);
-            this.btn_thoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_thoat.Location = new System.Drawing.Point(236, 178);
+            this.btn_thoat.Margin = new System.Windows.Forms.Padding(2);
             this.btn_thoat.Name = "btn_thoat";
             this.btn_thoat.Size = new System.Drawing.Size(63, 26);
             this.btn_thoat.TabIndex = 18;
@@ -237,13 +234,13 @@ namespace QLKS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 290);
+            this.ClientSize = new System.Drawing.Size(481, 290);
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.btn_chitietdatphong);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txt_nhanvienthuchien);
+            this.Controls.Add(this.txt_ngaydi);
+            this.Controls.Add(this.txt_ngayden);
+            this.Controls.Add(this.txt_ngaydat);
             this.Controls.Add(this.txt_sophong);
             this.Controls.Add(this.txt_songuoi);
             this.Controls.Add(this.txt_datphong);
@@ -257,14 +254,15 @@ namespace QLKS
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_DATPHONG";
             this.Text = "Frm_DATPHONG";
+            this.Load += new System.EventHandler(this.Frm_DATPHONG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txt_khachang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_datphong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_songuoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_sophong)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_nhanvienthuchien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,10 +283,10 @@ namespace QLKS
         private System.Windows.Forms.NumericUpDown txt_datphong;
         private System.Windows.Forms.NumericUpDown txt_songuoi;
         private System.Windows.Forms.NumericUpDown txt_sophong;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.DateTimePicker txt_ngaydat;
+        private System.Windows.Forms.DateTimePicker txt_ngayden;
+        private System.Windows.Forms.DateTimePicker txt_ngaydi;
+        private System.Windows.Forms.NumericUpDown txt_nhanvienthuchien;
         private System.Windows.Forms.Button btn_chitietdatphong;
         private System.Windows.Forms.Button btn_thoat;
     }

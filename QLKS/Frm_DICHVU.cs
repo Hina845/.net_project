@@ -29,7 +29,7 @@ namespace QLKS
         private void HIENTHI_DULIEU()
         {
             txt_ID.DataBindings.Clear();
-            txt_ID.DataBindings.Add("Text", dataGridView1.DataSource, "ID");
+            txt_ID.DataBindings.Add("Value", dataGridView1.DataSource, "ID");
 
             txt_Ten.DataBindings.Clear();
             txt_Ten.DataBindings.Add("Text", dataGridView1.DataSource, "TEN");
@@ -56,7 +56,7 @@ namespace QLKS
 
         private void btn_TaoMoi_Click(object sender, EventArgs e)
         {
-            txt_ID.Text = "";
+            txt_ID.Value = 0;
             txt_Ten.Text = "";
             txt_Gia.Text = "";
             txt_ID.Focus();
@@ -64,7 +64,7 @@ namespace QLKS
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            String sql_Luu = "insert into DICH_VU values (" + txt_ID.Text + ",'" + txt_Ten.Text + "', " + txt_Gia.Text + ");";
+            String sql_Luu = "insert into DICH_VU values (" + txt_ID.Value + ",'" + txt_Ten.Text + "', " + txt_Gia.Text + ");";
             kn.ThucThi(sql_Luu);
             BANG_DICHVU();
         }
@@ -78,7 +78,7 @@ namespace QLKS
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            String sql_Xoa = "DELETE  FROM [DICH_VU] WHERE ID=" + txt_ID.Text + ";";
+            String sql_Xoa = "DELETE  FROM [DICH_VU] WHERE ID=" + txt_ID.Value + ";";
             kn.ThucThi(sql_Xoa);
             BANG_DICHVU();
         }

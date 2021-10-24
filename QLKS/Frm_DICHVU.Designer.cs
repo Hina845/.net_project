@@ -43,12 +43,13 @@ namespace QLKS
             this.dICHVUBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLKSDataSet = new QLKS.QLKSDataSet();
             this.dICH_VUTableAdapter = new QLKS.QLKSDataSetTableAdapters.DICH_VUTableAdapter();
-            this.txt_ID = new System.Windows.Forms.TextBox();
             this.txt_Gia = new System.Windows.Forms.TextBox();
             this.txt_Ten = new System.Windows.Forms.TextBox();
+            this.txt_ID = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dICHVUBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_ID)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -95,7 +96,7 @@ namespace QLKS
             // btn_TaoMoi
             // 
             this.btn_TaoMoi.Location = new System.Drawing.Point(434, 98);
-            this.btn_TaoMoi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_TaoMoi.Margin = new System.Windows.Forms.Padding(2);
             this.btn_TaoMoi.Name = "btn_TaoMoi";
             this.btn_TaoMoi.Size = new System.Drawing.Size(63, 25);
             this.btn_TaoMoi.TabIndex = 4;
@@ -106,7 +107,7 @@ namespace QLKS
             // btn_Luu
             // 
             this.btn_Luu.Location = new System.Drawing.Point(434, 127);
-            this.btn_Luu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Luu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Size = new System.Drawing.Size(63, 25);
             this.btn_Luu.TabIndex = 5;
@@ -117,7 +118,7 @@ namespace QLKS
             // btn_Sua
             // 
             this.btn_Sua.Location = new System.Drawing.Point(434, 157);
-            this.btn_Sua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Sua.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(63, 25);
             this.btn_Sua.TabIndex = 6;
@@ -128,7 +129,7 @@ namespace QLKS
             // btn_Xoa
             // 
             this.btn_Xoa.Location = new System.Drawing.Point(434, 186);
-            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Xoa.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(63, 25);
             this.btn_Xoa.TabIndex = 7;
@@ -139,7 +140,7 @@ namespace QLKS
             // btn_Thoat
             // 
             this.btn_Thoat.Location = new System.Drawing.Point(434, 215);
-            this.btn_Thoat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Thoat.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Thoat.Name = "btn_Thoat";
             this.btn_Thoat.Size = new System.Drawing.Size(63, 25);
             this.btn_Thoat.TabIndex = 8;
@@ -151,7 +152,7 @@ namespace QLKS
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(63, 144);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
@@ -173,19 +174,10 @@ namespace QLKS
             // 
             this.dICH_VUTableAdapter.ClearBeforeFill = true;
             // 
-            // txt_ID
-            // 
-            this.txt_ID.Location = new System.Drawing.Point(117, 69);
-            this.txt_ID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txt_ID.Name = "txt_ID";
-            this.txt_ID.Size = new System.Drawing.Size(289, 20);
-            this.txt_ID.TabIndex = 10;
-            this.txt_ID.TextChanged += new System.EventHandler(this.txt_ID_TextChanged);
-            // 
             // txt_Gia
             // 
             this.txt_Gia.Location = new System.Drawing.Point(117, 112);
-            this.txt_Gia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Gia.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Gia.Name = "txt_Gia";
             this.txt_Gia.Size = new System.Drawing.Size(289, 20);
             this.txt_Gia.TabIndex = 11;
@@ -193,19 +185,26 @@ namespace QLKS
             // txt_Ten
             // 
             this.txt_Ten.Location = new System.Drawing.Point(117, 90);
-            this.txt_Ten.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Ten.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Ten.Name = "txt_Ten";
             this.txt_Ten.Size = new System.Drawing.Size(289, 20);
             this.txt_Ten.TabIndex = 12;
+            // 
+            // txt_ID
+            // 
+            this.txt_ID.Location = new System.Drawing.Point(117, 68);
+            this.txt_ID.Name = "txt_ID";
+            this.txt_ID.Size = new System.Drawing.Size(289, 20);
+            this.txt_ID.TabIndex = 13;
             // 
             // Frm_DICHVU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 253);
+            this.ClientSize = new System.Drawing.Size(800, 390);
+            this.Controls.Add(this.txt_ID);
             this.Controls.Add(this.txt_Ten);
             this.Controls.Add(this.txt_Gia);
-            this.Controls.Add(this.txt_ID);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btn_Thoat);
             this.Controls.Add(this.btn_Xoa);
@@ -216,13 +215,14 @@ namespace QLKS
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_DICHVU";
             this.Text = "Frm_DICHVU";
             this.Load += new System.EventHandler(this.Frm_DICHVU_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dICHVUBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLKSDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_ID)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,8 +243,8 @@ namespace QLKS
         private QLKSDataSet qLKSDataSet;
         private System.Windows.Forms.BindingSource dICHVUBindingSource;
         private QLKSDataSetTableAdapters.DICH_VUTableAdapter dICH_VUTableAdapter;
-        private System.Windows.Forms.TextBox txt_ID;
         private System.Windows.Forms.TextBox txt_Gia;
         private System.Windows.Forms.TextBox txt_Ten;
+        private System.Windows.Forms.NumericUpDown txt_ID;
     }
 }
