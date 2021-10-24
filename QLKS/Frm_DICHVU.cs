@@ -39,9 +39,9 @@ namespace QLKS
         }
         private void Frm_DICHVU_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'qLKSDataSet.DICH_VU' table. You can move, or remove it, as needed.
-            this.dICH_VUTableAdapter.Fill(this.qLKSDataSet.DICH_VU);
-            
+            BANG_DICHVU();
+
+
         }
 
         private void btn_Thoat_Click(object sender, EventArgs e)

@@ -70,6 +70,12 @@
     <Compile Include="FrmThietBi.Designer.cs">
       <DependentUpon>FrmThietBi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_DATPHONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DATPHONG.Designer.cs">
+      <DependentUpon>Frm_DATPHONG.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_DICHVU.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThietBi.resx">
       <DependentUpon>FrmThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DATPHONG.resx">
+      <DependentUpon>Frm_DATPHONG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DICHVU.resx">
       <DependentUpon>Frm_DICHVU.cs</DependentUpon>
