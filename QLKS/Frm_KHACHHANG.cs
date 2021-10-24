@@ -144,5 +144,14 @@ namespace QLKS
         {
             HienThi_DuLieu();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            decimal a= txtID.Value;
+            int b = decimal.ToInt32(a);
+            Frm_DATPHONG frm = new Frm_DATPHONG(b);
+            frm.Show();
+            this.Hide();
+        }
     }
 }

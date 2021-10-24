@@ -240,6 +240,7 @@ namespace QLKS
             this.Controls.Add(this.label1);
             this.Name = "Frm_DATPHONG";
             this.Text = "Frm_DATPHONG";
+            this.Load += new System.EventHandler(this.Frm_DATPHONG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txt_khachang)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_datphong)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_songuoi)).EndInit();
