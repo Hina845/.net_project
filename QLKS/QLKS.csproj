@@ -70,6 +70,12 @@
     <Compile Include="FrmThietBi.Designer.cs">
       <DependentUpon>FrmThietBi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_DANGKIPHONG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_DANGKIPHONG.Designer.cs">
+      <DependentUpon>Frm_DANGKIPHONG.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_DATPHONG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmThietBi.resx">
       <DependentUpon>FrmThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_DANGKIPHONG.resx">
+      <DependentUpon>Frm_DANGKIPHONG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_DATPHONG.resx">
       <DependentUpon>Frm_DATPHONG.cs</DependentUpon>
