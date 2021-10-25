@@ -14,7 +14,7 @@ namespace QLKS
 {
     public partial class Frm_DANGKIPHONG : Form
     {
-        private int ID;
+        private int ID_PHONG, SO_PHONG;
         KetNoi kn = new KetNoi();
         public Frm_DANGKIPHONG()
         {
@@ -29,15 +29,19 @@ namespace QLKS
             HienThi_DuLieu();
         }
 
-        public Frm_DANGKIPHONG(int ID)
+        public Frm_DANGKIPHONG(int ID_PHONG,int SO_PHONG )
         {
             InitializeComponent();
-            this.ID = ID;
+            this.ID_PHONG = ID_PHONG;
+            this.SO_PHONG = SO_PHONG;
         }
         public void HienThi_DuLieu()
         {
-            numPhong.DataBindings.Clear();
+            numPhong.DataBindings.Clear();          
             numPhong.DataBindings.Add("Value", DataGrid_Dangkyphong.DataSource, "ID");
+            txtTrangthai.DataBindings.Clear();
+            txtTrangthai.DataBindings.Add("Text", DataGrid_Dangkyphong.DataSource, "TRANG_THAI");
+
         }
 
             private void txtID_TextChanged(object sender, EventArgs e)
@@ -54,7 +58,9 @@ namespace QLKS
         {
             Bang_DANGKYPHONG();
             numDatphong.DataBindings.Clear();
-            numDatphong .Value= ID;
+            numDatphong .Value= ID_PHONG;
+            numSophong.DataBindings.Clear();
+            numSophong.Value = SO_PHONG;
 
         }
 
@@ -65,9 +71,48 @@ namespace QLKS
 
         private void btnDangky_Click(object sender, EventArgs e)
         {
-            DialogResult thongbao;
-            thongbao = MessageBox.Show("Đã đăng ký phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-            if (thongbao == DialogResult.OK) this.Close();
+            
+
+            if (txtTrangthai.Text == "Ban")
+            {
+                DialogResult thongbao;
+                thongbao = MessageBox.Show("Phòng này đã được đăng ký,Hãy đăng ký phòng khác", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            }
+            else
+            {
+                numSophong.Value = numSophong.Value - 1;
+                string sql_update;
+                sql_update = "UPDATE PHONG SET TRANG_THAI='Ban' where ID= " + numPhong.Value;
+                kn.ThucThi(sql_update);
+                Bang_DANGKYPHONG();
+
+            }
+
+            if (numSophong.Value == 0)
+            {
+                DialogResult thongbao;
+                thongbao = MessageBox.Show("Đã đăng ký phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                this.Close();
+            }
+           
+           
+
+            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numDatphong_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

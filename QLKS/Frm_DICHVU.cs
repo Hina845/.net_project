@@ -82,5 +82,10 @@ namespace QLKS
             kn.ThucThi(sql_Xoa);
             BANG_DICHVU();
         }
+
+        private void txt_ID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
