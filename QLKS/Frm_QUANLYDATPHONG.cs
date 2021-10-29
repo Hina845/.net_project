@@ -1,0 +1,137 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace QLKS
+{
+    public partial class Frm_QUANLYDATPHONG : Form
+    {
+        public Frm_QUANLYDATPHONG()
+        {
+            InitializeComponent();
+        }
+
+        KetNoi kn = new KetNoi();
+
+        public void BANG_QUANLYDATPHONG()
+        {
+            DataTable dta = new DataTable();
+            dta = kn.Lay_DulieuBang("Select * from DAT_PHONG");
+            dataGridView1.DataSource = dta;
+            HIENTHI_DULIEU();
+        }
+
+        private void HIENTHI_DULIEU()
+        {
+            txt_khachang.DataBindings.Clear();
+            txt_khachang.DataBindings.Add("Value", dataGridView1.DataSource, "ID_KHACH_HANG");
+
+            txt_datphong.DataBindings.Clear();
+            txt_datphong.DataBindings.Add("Value", dataGridView1.DataSource, "ID");
+
+            txt_songuoi.DataBindings.Clear();
+            txt_songuoi.DataBindings.Add("Value", dataGridView1.DataSource, "SO_NGUOI");
+
+            txt_sophong.DataBindings.Clear();
+            txt_sophong.DataBindings.Add("Value", dataGridView1.DataSource, "SO_PHONG");
+
+            txt_ngaydat.DataBindings.Clear();
+            txt_ngaydat.DataBindings.Add("Value", dataGridView1.DataSource, "NGAY_DAT");
+
+            txt_ngayden.DataBindings.Clear();
+            txt_ngayden.DataBindings.Add("Value", dataGridView1.DataSource, "NGAY_DEN");
+
+            txt_ngaydi.DataBindings.Clear();
+            txt_ngaydi.DataBindings.Add("Value", dataGridView1.DataSource, "NGAY_DI");
+
+            txt_nhanvienthuchien.DataBindings.Clear();
+            txt_nhanvienthuchien.DataBindings.Add("Text", dataGridView1.DataSource, "ID_NGUOI_THUC_HIEN");
+
+        }
+
+        //
+        private void HIENTHI_DULIEU2()
+        {
+           
+            // hiển thị cho phần tìm kiếm
+            txt_datphong.DataBindings.Clear();
+            txt_datphong.DataBindings.Add("Value", dataGridView1.DataSource, "ID");
+
+            txt_songuoi.DataBindings.Clear();
+            txt_songuoi.DataBindings.Add("Value", dataGridView1.DataSource, "SO_NGUOI");
+
+            txt_sophong.DataBindings.Clear();
+            txt_sophong.DataBindings.Add("Value", dataGridView1.DataSource, "SO_PHONG");
+
+            txt_ngaydat.DataBindings.Clear();
+            txt_ngaydat.DataBindings.Add("Value", dataGridView1.DataSource, "NGAY_DAT");
+
+            txt_ngayden.DataBindings.Clear();
+            txt_ngayden.DataBindings.Add("Value", dataGridView1.DataSource, "NGAY_DEN");
+
+            txt_ngaydi.DataBindings.Clear();
+            txt_ngaydi.DataBindings.Add("Value", dataGridView1.DataSource, "NGAY_DI");
+
+            txt_nhanvienthuchien.DataBindings.Clear();
+            txt_nhanvienthuchien.DataBindings.Add("Text", dataGridView1.DataSource, "ID_NGUOI_THUC_HIEN");
+
+        }
+
+        private void btn_thoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Frm_QUANLYDATPHONG_Load(object sender, EventArgs e)
+        {
+            //combobox Nhanvienthuchien
+            txt_nhanvienthuchien.DataSource = kn.Lay_DulieuBang("select ID from NHAN_VIEN where CHUC_VU='Tiep tan';");
+            txt_nhanvienthuchien.DisplayMember = "ID";
+            txt_nhanvienthuchien.ValueMember = "ID";
+
+            BANG_QUANLYDATPHONG();
+
+        }
+
+        private void btn_SUA_Click(object sender, EventArgs e)
+        {
+            String sqlsua = "update DAT_PHONG SET ID_NGUOI_THUC_HIEN = " + txt_nhanvienthuchien.Text + ", SO_NGUOI = " + txt_songuoi.Value + " ,SO_PHONG =" + txt_sophong.Value + ",NGAY_DAT='" + txt_ngaydat.Value + "',NGAY_DEN='" + txt_ngayden.Value + "',NGAY_DI='" + txt_ngaydi.Value + "' where ID=" + txt_datphong.Value + ";";
+            kn.ThucThi(sqlsua);
+        }
+
+        private void btn_XOA_Click(object sender, EventArgs e)
+        {
+            String sqlXOA = "delete DAT_PHONG where ID =" + txt_datphong.Value + " ";
+            kn.ThucThi(sqlXOA);
+        }
+
+        private void btn_TimKiemIDkh_Click(object sender, EventArgs e)
+        {
+            // sau khi ấn nút tìm kiếm sẽ hiển thị ra mã id khách hàng ở dòng ID khách hàng
+            DataTable dtaID = kn.Lay_DulieuBang("select ID from KHACH_HANG where SDT ='"+txt_SDTtimkiem.Text+"'");
+
+            txt_khachang.DataBindings.Clear();
+            txt_khachang.DataBindings.Add("Value", dtaID, "ID");
+            // sau đó chuyển datagreatview thành bảng đặt phòng chỉ chứa khách hàng có mã ID tìm kiếm
+            dataGridView1.DataSource = kn.Lay_DulieuBang("select * from DAT_PHONG where ID_KHACH_HANG="+txt_khachang.Value+";");
+            //hiện thị dữ liệu lên textbox 
+            HIENTHI_DULIEU2();
+        }
+
+        private void btn_loc_kh_hethan_Click(object sender, EventArgs e)
+        {
+            //lấy dữ liệu từ bảng DAT_PHONG có ngày đi trừ ngày đến <=0
+            DataTable dtaID = kn.Lay_DulieuBang("select * from DAT_PHONG where DATEDIFF(DAY,NGAY_DEN,NGAY_DI)<=0;");
+            //hiện bảng lên dataGridView1
+            dataGridView1.DataSource = dtaID;
+            // hiện thị dũ liệu
+            HIENTHI_DULIEU();
+        }
+    }
+}
