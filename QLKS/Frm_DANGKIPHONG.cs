@@ -68,6 +68,12 @@ namespace QLKS
             numSophong.DataBindings.Clear();
             numSophong.Value = SO_PHONG;
 
+            DataTable dtaID = kn.Lay_DulieuBang("select MAX(ID) AS ID from DANG_KY_PHONG ");
+            
+            numID.DataBindings.Add("Value", dtaID, "ID");
+            numID.Value = numID.Value + 1;
+
+
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -95,9 +101,11 @@ namespace QLKS
                 kn.ThucThi(sql_update);
                 
                 string sql_luu;
-                sql_luu = "INSERT INTO DANG_KY_PHONG VALUES ('" + txtID.Text + " ', " + numDatphong.Value + ", " + numPhong.Value + ")";
+                sql_luu = "INSERT INTO DANG_KY_PHONG VALUES (" + numID.Text + " , " + numDatphong.Value + ", " + numPhong.Value + ")";
                 kn.ThucThi(sql_luu);
+                
                 Bang_DANGKYPHONG();
+                numID.Value = numID.Value + 1;
 
             }
            
@@ -112,6 +120,11 @@ namespace QLKS
         }
 
         private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numID_ValueChanged(object sender, EventArgs e)
         {
 
         }
