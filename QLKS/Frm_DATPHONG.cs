@@ -50,7 +50,7 @@ namespace QLKS
             int d = decimal.ToInt32(c);
 
             //them dl vao bang DAT_PHONG
-            String sql = "Insert into DAT_PHONG VALUES("+txt_datphong.Value+","+txt_khachang.Value+","+txt_nhanvienthuchien.Text+","+txt_songuoi.Value+","+txt_sophong.Value+",'"+txt_ngaydat.Value+"','"+txt_ngayden.Value+"','"+txt_ngaydi+"')";
+            String sql = "Insert into DAT_PHONG VALUES("+txt_datphong.Value+","+txt_khachang.Value+","+txt_nhanvienthuchien.Text+","+txt_songuoi.Value+","+txt_sophong.Value+",'"+txt_ngaydat.Value+"','"+txt_ngayden.Value+"','"+txt_ngaydi.Value+"')";
             kn.ThucThi(sql);
                 
             Frm_DANGKIPHONG frm = new Frm_DANGKIPHONG(b, d);
@@ -63,6 +63,11 @@ namespace QLKS
         private void btn_thoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txt_datphong_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
