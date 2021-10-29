@@ -17,11 +17,9 @@ namespace QLKS
         public void KetNoi_Dulieu()
         {
 
-<<<<<<< HEAD
-            string strKetNoi = @"Data Source=LAPTOP-OGIL9U3L\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
-=======
+
             string strKetNoi = @"Data Source=TVH\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
->>>>>>> 17aa84b1fd6ebcae3681564bb25b983070007769
+
 
             
             cnn = new SqlConnection(strKetNoi);

@@ -42,8 +42,6 @@ namespace QLKS
             this.numDatphong = new System.Windows.Forms.NumericUpDown();
             this.lblSophong = new System.Windows.Forms.Label();
             this.numSophong = new System.Windows.Forms.NumericUpDown();
-            this.lblTrangthai = new System.Windows.Forms.Label();
-            this.txtTrangthai = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numPhong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrid_Dangkyphong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDatphong)).BeginInit();
@@ -168,7 +166,7 @@ namespace QLKS
             // 
             this.lblSophong.AutoSize = true;
             this.lblSophong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSophong.Location = new System.Drawing.Point(81, 393);
+            this.lblSophong.Location = new System.Drawing.Point(81, 328);
             this.lblSophong.Name = "lblSophong";
             this.lblSophong.Size = new System.Drawing.Size(111, 25);
             this.lblSophong.TabIndex = 12;
@@ -179,38 +177,16 @@ namespace QLKS
             // 
             this.numSophong.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.numSophong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numSophong.Location = new System.Drawing.Point(259, 392);
+            this.numSophong.Location = new System.Drawing.Point(259, 327);
             this.numSophong.Name = "numSophong";
             this.numSophong.Size = new System.Drawing.Size(273, 26);
             this.numSophong.TabIndex = 13;
-            // 
-            // lblTrangthai
-            // 
-            this.lblTrangthai.AutoSize = true;
-            this.lblTrangthai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTrangthai.Location = new System.Drawing.Point(71, 328);
-            this.lblTrangthai.Name = "lblTrangthai";
-            this.lblTrangthai.Size = new System.Drawing.Size(116, 25);
-            this.lblTrangthai.TabIndex = 14;
-            this.lblTrangthai.Text = "Trạng thái ";
-            this.lblTrangthai.Click += new System.EventHandler(this.label2_Click_1);
-            // 
-            // txtTrangthai
-            // 
-            this.txtTrangthai.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtTrangthai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrangthai.Location = new System.Drawing.Point(259, 327);
-            this.txtTrangthai.Name = "txtTrangthai";
-            this.txtTrangthai.Size = new System.Drawing.Size(273, 26);
-            this.txtTrangthai.TabIndex = 15;
             // 
             // Frm_DANGKIPHONG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 755);
-            this.Controls.Add(this.txtTrangthai);
-            this.Controls.Add(this.lblTrangthai);
             this.Controls.Add(this.numSophong);
             this.Controls.Add(this.lblSophong);
             this.Controls.Add(this.numDatphong);
@@ -251,7 +227,5 @@ namespace QLKS
         private System.Windows.Forms.NumericUpDown numDatphong;
         private System.Windows.Forms.Label lblSophong;
         private System.Windows.Forms.NumericUpDown numSophong;
-        private System.Windows.Forms.Label lblTrangthai;
-        private System.Windows.Forms.TextBox txtTrangthai;
     }
 }
