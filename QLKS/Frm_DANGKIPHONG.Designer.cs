@@ -139,6 +139,7 @@ namespace QLKS
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // numDatphong
             // 
@@ -168,6 +169,7 @@ namespace QLKS
             this.numSophong.Name = "numSophong";
             this.numSophong.Size = new System.Drawing.Size(273, 26);
             this.numSophong.TabIndex = 13;
+            this.numSophong.ValueChanged += new System.EventHandler(this.numSophong_ValueChanged);
             // 
             // numID
             // 
