@@ -19,6 +19,7 @@ namespace QLKS
             nmrIDdichvu.DataBindings.Add("value", dtaGridDichVu.DataSource, "id");
             txtDichVU.DataBindings.Clear();
             txtDichVU.DataBindings.Add("text", dtaGridDichVu.DataSource, "ten");
+            
         }
         private void BANG_DICHVU()
         {
@@ -39,6 +40,7 @@ namespace QLKS
         private void Frm_DangKySuDungDv_Load(object sender, EventArgs e)
         {
             BANG_DICHVU();
+            nmrID.Enabled = false;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -55,8 +57,8 @@ namespace QLKS
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
         {
-            nmrID.Value = 0;
-            nmrID.Focus();
+            DataTable dtaId = kn.Lay_DulieuBang("select (MAX(id)+1) as id from chi_tiet_su_dung_dv");
+            nmrID.DataBindings.Add("value", dtaId, "id");
             btnLuu.Enabled = true;
         }
 

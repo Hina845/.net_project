@@ -45,10 +45,11 @@ namespace QLKS
             this.cbTenPhong = new System.Windows.Forms.CheckBox();
             this.cbTrangThai = new System.Windows.Forms.CheckBox();
             this.cbTenTb = new System.Windows.Forms.CheckBox();
-            this.txtID_CTTB = new System.Windows.Forms.TextBox();
             this.cboIdPhong = new System.Windows.Forms.ComboBox();
             this.btnTaiLai = new System.Windows.Forms.Button();
+            this.txtID_CTTB = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dtaGridChiTietTB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID_CTTB)).BeginInit();
             this.SuspendLayout();
             // 
             // dtaGridChiTietTB
@@ -212,14 +213,6 @@ namespace QLKS
             this.cbTenTb.Text = "TÊN TB:";
             this.cbTenTb.UseVisualStyleBackColor = true;
             // 
-            // txtID_CTTB
-            // 
-            this.txtID_CTTB.Enabled = false;
-            this.txtID_CTTB.Location = new System.Drawing.Point(157, 87);
-            this.txtID_CTTB.Name = "txtID_CTTB";
-            this.txtID_CTTB.Size = new System.Drawing.Size(141, 20);
-            this.txtID_CTTB.TabIndex = 20;
-            // 
             // cboIdPhong
             // 
             this.cboIdPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -240,17 +233,29 @@ namespace QLKS
             this.btnTaiLai.UseVisualStyleBackColor = true;
             this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
             // 
+            // txtID_CTTB
+            // 
+            this.txtID_CTTB.Location = new System.Drawing.Point(157, 86);
+            this.txtID_CTTB.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.txtID_CTTB.Name = "txtID_CTTB";
+            this.txtID_CTTB.Size = new System.Drawing.Size(141, 20);
+            this.txtID_CTTB.TabIndex = 26;
+            // 
             // FormChiTietThietBi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtID_CTTB);
             this.Controls.Add(this.btnTaiLai);
             this.Controls.Add(this.cboIdPhong);
             this.Controls.Add(this.cbTenTb);
             this.Controls.Add(this.cbTrangThai);
             this.Controls.Add(this.cbTenPhong);
-            this.Controls.Add(this.txtID_CTTB);
             this.Controls.Add(this.cboTrangThai);
             this.Controls.Add(this.cboTenTb);
             this.Controls.Add(this.cboTenPhong);
@@ -268,6 +273,7 @@ namespace QLKS
             this.Text = "FormChiTietThietBi";
             this.Load += new System.EventHandler(this.FormChiTietThietBi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtaGridChiTietTB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtID_CTTB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -291,8 +297,8 @@ namespace QLKS
         private System.Windows.Forms.CheckBox cbTenPhong;
         private System.Windows.Forms.CheckBox cbTrangThai;
         private System.Windows.Forms.CheckBox cbTenTb;
-        private System.Windows.Forms.TextBox txtID_CTTB;
         private System.Windows.Forms.ComboBox cboIdPhong;
         private System.Windows.Forms.Button btnTaiLai;
+        private System.Windows.Forms.NumericUpDown txtID_CTTB;
     }
 }

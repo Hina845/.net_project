@@ -21,7 +21,7 @@ namespace QLKS
             cboTenTb.DataBindings.Clear();
             cboTrangThai.DataBindings.Clear();
             
-            txtID_CTTB.DataBindings.Add("text", dtaGridChiTietTB.DataSource, "ID_CTTB");
+            txtID_CTTB.DataBindings.Add("value", dtaGridChiTietTB.DataSource, "ID_CTTB");
             cboIdPhong.DataBindings.Add("text", dtaGridChiTietTB.DataSource, "ID_PHONG");
             cboTenPhong.DataBindings.Add("text", dtaGridChiTietTB.DataSource, "TEN_PHONG");
             cboTenTb.DataBindings.Add("text", dtaGridChiTietTB.DataSource, "TEN_TB");
@@ -79,8 +79,9 @@ namespace QLKS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtID_CTTB.Enabled = true;
-            txtID_CTTB.Text = "";
+            DataTable dtaId = kn.Lay_DulieuBang("select (MAX(id)+1) as id from chi_tiet_thiet_bi");
+            txtID_CTTB.DataBindings.Clear();
+            txtID_CTTB.DataBindings.Add("value", dtaId, "id");
             btnChen.Enabled = true;
             cboIdPhong.DropDownStyle = ComboBoxStyle.DropDown;
         }
@@ -101,7 +102,7 @@ namespace QLKS
             DialogResult result = MessageBox.Show("Bạn xác định muốn lưu!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == System.Windows.Forms.DialogResult.OK)
             {
-                string sql = "insert into CHI_TIET_THIET_BI values('" + txtID_CTTB.Text + "'," + (cboTenTb.SelectedIndex + 1) + ",'" + (cboIdPhong.Text) + "','" + cboTrangThai.Text + "')";
+                string sql = "insert into CHI_TIET_THIET_BI values('" + txtID_CTTB.Value + "'," + (cboTenTb.SelectedIndex + 1) + ",'" + (cboIdPhong.Text) + "','" + cboTrangThai.Text + "')";
                 kn.ThucThi(sql);
                 BANG_CHITIETTHIETBI();
             }          
@@ -117,7 +118,7 @@ namespace QLKS
             DialogResult result = MessageBox.Show("Bạn xác định muốn xoá!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == System.Windows.Forms.DialogResult.OK)
             {
-                string sql = "delete from CHI_TIET_THIET_BI where id='" + txtID_CTTB.Text + "'";
+                string sql = "delete from CHI_TIET_THIET_BI where id='" + txtID_CTTB.Value + "'";
                 kn.ThucThi(sql);
                 BANG_CHITIETTHIETBI();
             }
@@ -151,6 +152,7 @@ namespace QLKS
         private void btnTaiLai_Click(object sender, EventArgs e)
         {
             BANG_CHITIETTHIETBI();
+            txtID_CTTB.Enabled = false;
         }
     }
 }

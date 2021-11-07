@@ -51,6 +51,7 @@ namespace QLKS
             kn.KetNoi_Dulieu();
             BANG_THIET_BI();
             btnLuu.Enabled = false;
+            nmrID.Enabled = false;
         }
 
         private void dtaGridThietBi_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -66,9 +67,11 @@ namespace QLKS
         private void btnTaoMoi_Click(object sender, EventArgs e)
         {
             btnLuu.Enabled=true;
+            nmrID.DataBindings.Clear();
+            DataTable dtaId = kn.Lay_DulieuBang("select (MAX(id)+1) as id from thiet_bi");
+            nmrID.DataBindings.Add("value", dtaId, "id");
             txtTen.Text = "";
             nmrGia.Value = 0;
-            nmrID.Value = 0;
             
         }
         private void btnLuu_Click(object sender, EventArgs e)
