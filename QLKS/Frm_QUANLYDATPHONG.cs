@@ -101,6 +101,7 @@ namespace QLKS
 
         private void btn_SUA_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Bạn xác định muốn sửa thông tin?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             String sqlsua = "update DAT_PHONG SET ID_NGUOI_THUC_HIEN = " + txt_nhanvienthuchien.Text + ", SO_NGUOI = " + txt_songuoi.Value + " ,SO_PHONG =" + txt_sophong.Value + ",NGAY_DAT='" + txt_ngaydat.Value + "',NGAY_DEN='" + txt_ngayden.Value + "',NGAY_DI='" + txt_ngaydi.Value + "' where ID=" + txt_datphong.Value + ";";
             kn.ThucThi(sqlsua);
             MessageBox.Show("Bạn đã update thành công!!!");
@@ -108,6 +109,7 @@ namespace QLKS
 
         private void btn_XOA_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Bạn xác định muốn Xóa bỏ thông tin đặt phòng này!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             String sqlXOA = "delete DAT_PHONG where ID =" + txt_datphong.Value + " ";
             kn.ThucThi(sqlXOA);
             MessageBox.Show("Bạn đã xóa thành công!!!");
