@@ -60,6 +60,7 @@ namespace QLKS
             txt_Ten.Text = "";
             txt_Gia.Text = "";
             txt_ID.Focus();
+            btn_Luu.Enabled = true;
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
