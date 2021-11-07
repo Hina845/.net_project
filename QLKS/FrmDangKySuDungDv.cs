@@ -43,12 +43,14 @@ namespace QLKS
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
-            string ngay = dateNgayDat.Value.ToString("yyyy/MM/dd");
-            string sql = "insert into chi_tiet_su_dung_dv values(" + nmrID.Value + "," + nmrIDphong.Value + "," + nmrIDdichvu.Value + ",'" + ngay + "')";
-            kn.ThucThi(sql);
-            btnLuu.Enabled = false;
-            MessageBox.Show("Đăng ký thành công!");
+            DialogResult result = MessageBox.Show("Bạn xác định muốn đăng ký sử dụng dịch vụ này!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                string ngay = dateNgayDat.Value.ToString("yyyy/MM/dd");
+                string sql = "insert into chi_tiet_su_dung_dv values(" + nmrID.Value + "," + nmrIDphong.Value + "," + nmrIDdichvu.Value + ",'" + ngay + "')";
+                kn.ThucThi(sql);
+                btnLuu.Enabled = false;
+            }            
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)

@@ -4,6 +4,7 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 #Ignore file KetNoi.cs
 KetNoi.cs
+Program.cs
 # User-specific files
 *.rsuser
 *.suo

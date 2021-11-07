@@ -73,24 +73,39 @@ namespace QLKS
         }
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            String sql = @"insert into thiet_bi values(" +nmrID.Value +",'" + txtTen.Text+"'," +nmrGia.Value+ ")";
-            kn.ThucThi(sql);
-            BANG_THIET_BI();
-            btnLuu.Enabled = false;
+            DialogResult result = MessageBox.Show("Bạn xác định muốn lưu!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sql = @"insert into thiet_bi values(" + nmrID.Value + ",'" + txtTen.Text + "'," + nmrGia.Value + ")";
+                kn.ThucThi(sql);
+                BANG_THIET_BI();
+                btnLuu.Enabled = false;
+            }
+                
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            String sql = @"update Thiet_Bi set ten='" + txtTen.Text + "',gia=" + nmrGia.Value + " where id=" + nmrID.Value + "";
-            kn.ThucThi(sql);
-            BANG_THIET_BI();
+            DialogResult result = MessageBox.Show("Bạn xác định muốn sửa!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sql = @"update Thiet_Bi set ten='" + txtTen.Text + "',gia=" + nmrGia.Value + " where id=" + nmrID.Value + "";
+                kn.ThucThi(sql);
+                BANG_THIET_BI();
+            }
+                
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            String sql = @"Delete from Thiet_Bi where id='" + nmrID.Value + "'";
-            kn.ThucThi(sql);
-            BANG_THIET_BI();
+            DialogResult result = MessageBox.Show("Bạn xác định muốn xoá!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sql = @"Delete from Thiet_Bi where id='" + nmrID.Value + "'";
+                kn.ThucThi(sql);
+                BANG_THIET_BI();
+            }
+                
         }
     }
 }

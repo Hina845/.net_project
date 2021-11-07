@@ -87,17 +87,24 @@ namespace QLKS
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string sql ="update CHI_TIET_THIET_BI set id_thiet_bi="+(cboTenTb.SelectedIndex+1)+",id_phong='"+cboIdPhong.Text+"',trang_thai='"+cboTrangThai.Text+"' where id='"+txtID_CTTB.Text+"'";
-            kn.ThucThi(sql);
-            BANG_CHITIETTHIETBI();
+            DialogResult result = MessageBox.Show("Bạn xác định muốn sửa!", "Thông báo", MessageBoxButtons.OKCancel,MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                string sql = "update CHI_TIET_THIET_BI set id_thiet_bi=" + (cboTenTb.SelectedIndex + 1) + ",id_phong='" + cboIdPhong.Text + "',trang_thai='" + cboTrangThai.Text + "' where id='" + txtID_CTTB.Text + "'";
+                kn.ThucThi(sql);
+                BANG_CHITIETTHIETBI();
+            }
         }
 
         private void btnChen_Click(object sender, EventArgs e)
         {
-            string sql = "insert into CHI_TIET_THIET_BI values('"+txtID_CTTB.Text+ "'," + (cboTenTb.SelectedIndex + 1) + ",'" + (cboIdPhong.Text) + "','" + cboTrangThai.Text + "')";
-            kn.ThucThi(sql);
-            
-            BANG_CHITIETTHIETBI();
+            DialogResult result = MessageBox.Show("Bạn xác định muốn lưu!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                string sql = "insert into CHI_TIET_THIET_BI values('" + txtID_CTTB.Text + "'," + (cboTenTb.SelectedIndex + 1) + ",'" + (cboIdPhong.Text) + "','" + cboTrangThai.Text + "')";
+                kn.ThucThi(sql);
+                BANG_CHITIETTHIETBI();
+            }          
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -107,9 +114,13 @@ namespace QLKS
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string sql = "delete from CHI_TIET_THIET_BI where id='" + txtID_CTTB.Text + "'";
-            kn.ThucThi(sql);
-            BANG_CHITIETTHIETBI();
+            DialogResult result = MessageBox.Show("Bạn xác định muốn xoá!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                string sql = "delete from CHI_TIET_THIET_BI where id='" + txtID_CTTB.Text + "'";
+                kn.ThucThi(sql);
+                BANG_CHITIETTHIETBI();
+            }
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
