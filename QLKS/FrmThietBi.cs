@@ -51,6 +51,7 @@ namespace QLKS
             kn.KetNoi_Dulieu();
             BANG_THIET_BI();
             btnLuu.Enabled = false;
+            nmrID.Enabled = false;
         }
 
         private void dtaGridThietBi_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -66,31 +67,48 @@ namespace QLKS
         private void btnTaoMoi_Click(object sender, EventArgs e)
         {
             btnLuu.Enabled=true;
+            nmrID.DataBindings.Clear();
+            DataTable dtaId = kn.Lay_DulieuBang("select (MAX(id)+1) as id from thiet_bi");
+            nmrID.DataBindings.Add("value", dtaId, "id");
             txtTen.Text = "";
             nmrGia.Value = 0;
-            nmrID.Value = 0;
             
         }
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            String sql = @"insert into thiet_bi values(" +nmrID.Value +",'" + txtTen.Text+"'," +nmrGia.Value+ ")";
-            kn.ThucThi(sql);
-            BANG_THIET_BI();
-            btnLuu.Enabled = false;
+            DialogResult result = MessageBox.Show("Bạn xác định muốn lưu!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sql = @"insert into thiet_bi values(" + nmrID.Value + ",'" + txtTen.Text + "'," + nmrGia.Value + ")";
+                kn.ThucThi(sql);
+                BANG_THIET_BI();
+                btnLuu.Enabled = false;
+            }
+                
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            String sql = @"update Thiet_Bi set ten='" + txtTen.Text + "',gia=" + nmrGia.Value + " where id=" + nmrID.Value + "";
-            kn.ThucThi(sql);
-            BANG_THIET_BI();
+            DialogResult result = MessageBox.Show("Bạn xác định muốn sửa!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sql = @"update Thiet_Bi set ten='" + txtTen.Text + "',gia=" + nmrGia.Value + " where id=" + nmrID.Value + "";
+                kn.ThucThi(sql);
+                BANG_THIET_BI();
+            }
+                
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            String sql = @"Delete from Thiet_Bi where id='" + nmrID.Value + "'";
-            kn.ThucThi(sql);
-            BANG_THIET_BI();
+            DialogResult result = MessageBox.Show("Bạn xác định muốn xoá!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sql = @"Delete from Thiet_Bi where id='" + nmrID.Value + "'";
+                kn.ThucThi(sql);
+                BANG_THIET_BI();
+            }
+                
         }
     }
 }

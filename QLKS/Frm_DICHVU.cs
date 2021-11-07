@@ -60,10 +60,12 @@ namespace QLKS
             txt_Ten.Text = "";
             txt_Gia.Text = "";
             txt_ID.Focus();
+            btn_Luu.Enabled = true;
         }
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Bạn xác định muốn thêm dịch vụ này vào danh sách dịch vụ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             String sql_Luu = "insert into DICH_VU values (" + txt_ID.Value + ",'" + txt_Ten.Text + "', " + txt_Gia.Text + ");";
             kn.ThucThi(sql_Luu);
             BANG_DICHVU();
@@ -71,6 +73,7 @@ namespace QLKS
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
+            DialogResult result = MessageBox.Show("Bạn xác định muốn sửa thông tin dịch vụ này trong danh sách dịch vụ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             string sql_sua = "update  DICH_VU set TEN = '" + txt_Ten.Text + "' , GIA=" + txt_Gia.Text + " where ma_PB=" + txt_ID.Text;
             kn.ThucThi(sql_sua);
             BANG_DICHVU();
