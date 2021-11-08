@@ -65,25 +65,35 @@ namespace QLKS
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn xác định muốn thêm dịch vụ này vào danh sách dịch vụ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            String sql_Luu = "insert into DICH_VU values (" + txt_ID.Value + ",'" + txt_Ten.Text + "', " + txt_Gia.Text + ");";
-            kn.ThucThi(sql_Luu);
-            BANG_DICHVU();
+            DialogResult result = MessageBox.Show("Bạn chắc chắn muốn thêm dịch vụ này vào danh sách dịch vụ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sql_Luu = "insert into DICH_VU values (" + txt_ID.Value + ",'" + txt_Ten.Text + "', " + txt_Gia.Text + ");";
+                kn.ThucThi(sql_Luu);
+                BANG_DICHVU();
+            }
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn xác định muốn sửa thông tin dịch vụ này trong danh sách dịch vụ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            string sql_sua = "update  DICH_VU set TEN = '" + txt_Ten.Text + "' , GIA=" + txt_Gia.Text + " where ma_PB=" + txt_ID.Text;
-            kn.ThucThi(sql_sua);
-            BANG_DICHVU();
+            DialogResult result = MessageBox.Show("Bạn chắc chắn muốn sửa thông tin dịch vụ này trong danh sách dịch vụ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                string sql_sua = "update  DICH_VU set TEN = '" + txt_Ten.Text + "' , GIA=" + txt_Gia.Text + " where ma_PB=" + txt_ID.Text;
+                kn.ThucThi(sql_sua);
+                BANG_DICHVU();
+            }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            String sql_Xoa = "DELETE  FROM [DICH_VU] WHERE ID=" + txt_ID.Value + ";";
-            kn.ThucThi(sql_Xoa);
-            BANG_DICHVU();
+            DialogResult result = MessageBox.Show("Bạn chắc chắn muốn xóa thông tin dịch vụ này trong danh sách dịch vụ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sql_Xoa = "DELETE  FROM [DICH_VU] WHERE ID=" + txt_ID.Value + ";";
+                kn.ThucThi(sql_Xoa);
+                BANG_DICHVU();
+            }
         }
 
         private void txt_ID_TextChanged(object sender, EventArgs e)

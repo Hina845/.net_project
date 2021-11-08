@@ -101,18 +101,25 @@ namespace QLKS
 
         private void btn_SUA_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn xác định muốn sửa thông tin?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            String sqlsua = "update DAT_PHONG SET ID_NGUOI_THUC_HIEN = " + txt_nhanvienthuchien.Text + ", SO_NGUOI = " + txt_songuoi.Value + " ,SO_PHONG =" + txt_sophong.Value + ",NGAY_DAT='" + txt_ngaydat.Value + "',NGAY_DEN='" + txt_ngayden.Value + "',NGAY_DI='" + txt_ngaydi.Value + "' where ID=" + txt_datphong.Value + ";";
-            kn.ThucThi(sqlsua);
-            MessageBox.Show("Bạn đã update thành công!!!");
+            DialogResult result = MessageBox.Show("Bạn chắc chắn muốn sửa thông tin?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sqlsua = "update DAT_PHONG SET ID_NGUOI_THUC_HIEN = " + txt_nhanvienthuchien.Text + ", SO_NGUOI = " + txt_songuoi.Value + " ,SO_PHONG =" + txt_sophong.Value + ",NGAY_DAT='" + txt_ngaydat.Value + "',NGAY_DEN='" + txt_ngayden.Value + "',NGAY_DI='" + txt_ngaydi.Value + "' where ID=" + txt_datphong.Value + ";";
+                kn.ThucThi(sqlsua);
+                MessageBox.Show("Bạn đã update thành công!!!");
+            }        
         }
 
         private void btn_XOA_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn xác định muốn Xóa bỏ thông tin đặt phòng này!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            String sqlXOA = "delete DAT_PHONG where ID =" + txt_datphong.Value + " ";
-            kn.ThucThi(sqlXOA);
-            MessageBox.Show("Bạn đã xóa thành công!!!");
+            DialogResult result = MessageBox.Show("Bạn chắc chắn muốn Xóa bỏ thông tin đặt phòng này!", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                String sqlXOA = "delete DAT_PHONG where ID =" + txt_datphong.Value + " ";
+                kn.ThucThi(sqlXOA);
+                MessageBox.Show("Bạn đã xóa thành công!!!");
+            }        
         }
 
         private void btn_TimKiemIDkh_Click(object sender, EventArgs e)
@@ -168,6 +175,7 @@ namespace QLKS
             dataGridView1.DataSource = kn.Lay_DulieuBang("select * from DAT_PHONG");
             btn_SUA.Enabled = true;
             btn_XOA.Enabled = true;
+            btn_ThanhToan.Enabled = false;
             HIENTHI_DULIEU();
         }
 
