@@ -137,7 +137,6 @@ namespace QLKS
             // 
             // txtID
             // 
-            this.txtID.Enabled = false;
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.txtID.Location = new System.Drawing.Point(316, 103);
@@ -204,7 +203,7 @@ namespace QLKS
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnThoat.Location = new System.Drawing.Point(895, 390);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(133, 55);
             this.btnThoat.TabIndex = 17;
@@ -216,7 +215,7 @@ namespace QLKS
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnXoa.Location = new System.Drawing.Point(895, 327);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(133, 55);
             this.btnXoa.TabIndex = 16;
@@ -228,7 +227,7 @@ namespace QLKS
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnSua.Location = new System.Drawing.Point(895, 263);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(133, 55);
             this.btnSua.TabIndex = 15;
@@ -241,7 +240,7 @@ namespace QLKS
             this.btnLuu.Enabled = false;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnLuu.Location = new System.Drawing.Point(895, 199);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(133, 55);
             this.btnLuu.TabIndex = 14;
@@ -253,7 +252,7 @@ namespace QLKS
             // 
             this.btnTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnTaoMoi.Location = new System.Drawing.Point(895, 135);
-            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(133, 55);
             this.btnTaoMoi.TabIndex = 13;
@@ -277,7 +276,7 @@ namespace QLKS
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button1.Location = new System.Drawing.Point(883, 73);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 55);
             this.button1.TabIndex = 19;
