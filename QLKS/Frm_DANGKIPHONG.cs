@@ -129,8 +129,26 @@ namespace QLKS
 
         }
 
+
+        private void numSophong_ValueChanged(object sender, EventArgs e)
+        {
+            
+            
+        }
+
         private void btnSua_Click(object sender, EventArgs e)
         {
+            DataTable dataID = kn.Lay_DulieuBang("select SO_PHONG FROM DAT_PHONG WHERE ID=" + numDatphong.Value);
+            numSophong.DataBindings.Clear();
+            numSophong.DataBindings.Add("Value", dataID, "SO_PHONG");
+            string sql_xoa;
+            sql_xoa = "DELETE FROM DANG_KY_PHONG where ID_DAT_PHONG= " +  numDatphong.Value;
+           
+            string sql_update;
+            sql_update = "update PHONG set TRANG_THAI='Trong' where ID IN(select ID_PHONG from DANG_KY_PHONG where ID_DAT_PHONG='" + numDatphong.Value+ "')";
+            kn.ThucThi(sql_update);
+            kn.ThucThi(sql_xoa);
+            Bang_DANGKYPHONG();
 
         }
 

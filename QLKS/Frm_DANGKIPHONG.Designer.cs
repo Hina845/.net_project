@@ -181,6 +181,7 @@ namespace QLKS
             this.numSophong.Name = "numSophong";
             this.numSophong.Size = new System.Drawing.Size(205, 23);
             this.numSophong.TabIndex = 13;
+            this.numSophong.ValueChanged += new System.EventHandler(this.numSophong_ValueChanged);
             // 
             // numID
             // 
