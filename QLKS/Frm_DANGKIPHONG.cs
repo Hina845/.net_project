@@ -129,6 +129,11 @@ namespace QLKS
 
         }
 
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void numDatphong_ValueChanged(object sender, EventArgs e)
         {
 
