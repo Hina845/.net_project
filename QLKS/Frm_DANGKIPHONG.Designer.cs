@@ -71,6 +71,7 @@ namespace QLKS
             // 
             // numPhong
             // 
+            this.numPhong.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.numPhong.Enabled = false;
             this.numPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPhong.Location = new System.Drawing.Point(259, 269);
@@ -144,6 +145,7 @@ namespace QLKS
             // 
             // numDatphong
             // 
+            this.numDatphong.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.numDatphong.Enabled = false;
             this.numDatphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numDatphong.ImeMode = System.Windows.Forms.ImeMode.Disable;
@@ -166,6 +168,7 @@ namespace QLKS
             // 
             // numSophong
             // 
+            this.numSophong.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.numSophong.Enabled = false;
             this.numSophong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numSophong.Location = new System.Drawing.Point(259, 327);
@@ -176,6 +179,7 @@ namespace QLKS
             // 
             // numID
             // 
+            this.numID.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.numID.Enabled = false;
             this.numID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numID.ImeMode = System.Windows.Forms.ImeMode.Disable;
