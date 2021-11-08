@@ -71,6 +71,8 @@ namespace QLKS
             // 
             // numPhong
             // 
+            this.numPhong.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.numPhong.Enabled = false;
             this.numPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numPhong.Location = new System.Drawing.Point(259, 269);
             this.numPhong.Name = "numPhong";
@@ -139,9 +141,12 @@ namespace QLKS
             this.btnSua.TabIndex = 10;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // numDatphong
             // 
+            this.numDatphong.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.numDatphong.Enabled = false;
             this.numDatphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numDatphong.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.numDatphong.Location = new System.Drawing.Point(259, 206);
@@ -163,14 +168,19 @@ namespace QLKS
             // 
             // numSophong
             // 
+            this.numSophong.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.numSophong.Enabled = false;
             this.numSophong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numSophong.Location = new System.Drawing.Point(259, 327);
             this.numSophong.Name = "numSophong";
             this.numSophong.Size = new System.Drawing.Size(273, 26);
             this.numSophong.TabIndex = 13;
+            this.numSophong.ValueChanged += new System.EventHandler(this.numSophong_ValueChanged);
             // 
             // numID
             // 
+            this.numID.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.numID.Enabled = false;
             this.numID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numID.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.numID.Location = new System.Drawing.Point(259, 131);

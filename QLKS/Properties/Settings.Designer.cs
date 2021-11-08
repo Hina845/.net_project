@@ -33,5 +33,16 @@ namespace QLKS.Properties {
                 return ((string)(this["QLKSConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLNCLI11;Data Source=DESKTOP-0LTH8BH;Integrated Security=SSPI;Initial C" +
+            "atalog=QLKS")]
+        public string ConnectionString {
+            get {
+                return ((string)(this["ConnectionString"]));
+            }
+        }
     }
 }
