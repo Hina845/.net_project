@@ -155,7 +155,7 @@ namespace QLKS
             txt_IDphong.Visible = true;
             
             //lấy dữ liệu từ bảng DAT_PHONG có ngày đi trừ ngày đến <=0
-            DataTable dtaID = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN, dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN, dp.NGAY_DI as NGAY_DI,  dkp.ID as ID_Phong FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG where DATEDIFF(DAY,NGAY_DI,GETDATE())<=0 AND ID_Phong NOT IN(SELECT ID_PHONG FROM HOA_DON_PHONG)");
+            DataTable dtaID = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN, dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN, dp.NGAY_DI as NGAY_DI,  dkp.ID as ID_Phong FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG where DATEDIFF(DAY,GETDATE(),NGAY_DI)<=0 AND ID_Phong NOT IN(SELECT ID_PHONG FROM HOA_DON_PHONG)");
             //hiện bảng lên dataGridView1
             dataGridView1.DataSource = dtaID;
             // hiện thị dũ liệu
