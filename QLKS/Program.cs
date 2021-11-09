@@ -16,7 +16,9 @@ namespace QLKS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_KHACHHANG());
+
+            Application.Run(new Frm_QUANLYDATPHONG());
+
         }
     }
 }

@@ -19,7 +19,9 @@ namespace QLKS
 
 
 
+
             string strKetNoi = @"Data Source=TVH\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
+
 
 
 

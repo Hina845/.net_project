@@ -59,10 +59,9 @@ namespace QLKS
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(314, 25);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Location = new System.Drawing.Point(419, 31);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(222, 36);
+            this.lblTitle.Size = new System.Drawing.Size(280, 44);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "KHÁCH HÀNG ";
             // 
@@ -70,10 +69,9 @@ namespace QLKS
             // 
             this.lblID.AutoSize = true;
             this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(105, 88);
-            this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblID.Location = new System.Drawing.Point(140, 108);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(32, 24);
+            this.lblID.Size = new System.Drawing.Size(42, 29);
             this.lblID.TabIndex = 1;
             this.lblID.Text = "ID:";
             // 
@@ -81,10 +79,9 @@ namespace QLKS
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(105, 127);
-            this.lblName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblName.Location = new System.Drawing.Point(140, 156);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(119, 24);
+            this.lblName.Size = new System.Drawing.Size(147, 29);
             this.lblName.TabIndex = 1;
             this.lblName.Text = "HỌ VÀ TÊN:";
             // 
@@ -92,10 +89,9 @@ namespace QLKS
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(105, 166);
-            this.lblPhone.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblPhone.Location = new System.Drawing.Point(140, 204);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(52, 24);
+            this.lblPhone.Size = new System.Drawing.Size(68, 29);
             this.lblPhone.TabIndex = 1;
             this.lblPhone.Text = "SĐT:";
             // 
@@ -103,10 +99,9 @@ namespace QLKS
             // 
             this.lblCMT.AutoSize = true;
             this.lblCMT.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCMT.Location = new System.Drawing.Point(105, 244);
-            this.lblCMT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCMT.Location = new System.Drawing.Point(140, 300);
             this.lblCMT.Name = "lblCMT";
-            this.lblCMT.Size = new System.Drawing.Size(56, 24);
+            this.lblCMT.Size = new System.Drawing.Size(72, 29);
             this.lblCMT.TabIndex = 1;
             this.lblCMT.Text = "CMT:";
             // 
@@ -114,10 +109,9 @@ namespace QLKS
             // 
             this.lblGmail.AutoSize = true;
             this.lblGmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGmail.Location = new System.Drawing.Point(105, 205);
-            this.lblGmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGmail.Location = new System.Drawing.Point(140, 252);
             this.lblGmail.Name = "lblGmail";
-            this.lblGmail.Size = new System.Drawing.Size(72, 24);
+            this.lblGmail.Size = new System.Drawing.Size(91, 29);
             this.lblGmail.TabIndex = 1;
             this.lblGmail.Text = "GMAIL:";
             // 
@@ -125,10 +119,9 @@ namespace QLKS
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(105, 285);
-            this.lblAddress.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAddress.Location = new System.Drawing.Point(140, 351);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(81, 24);
+            this.lblAddress.Size = new System.Drawing.Size(103, 29);
             this.lblAddress.TabIndex = 1;
             this.lblAddress.Text = "ĐỊA CHỈ:";
             // 
@@ -136,82 +129,83 @@ namespace QLKS
             // 
             this.lblNation.AutoSize = true;
             this.lblNation.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNation.Location = new System.Drawing.Point(105, 322);
-            this.lblNation.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblNation.Location = new System.Drawing.Point(140, 396);
             this.lblNation.Name = "lblNation";
-            this.lblNation.Size = new System.Drawing.Size(107, 24);
+            this.lblNation.Size = new System.Drawing.Size(136, 29);
             this.lblNation.TabIndex = 1;
             this.lblNation.Text = "QUỐC GIA:";
             // 
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(237, 84);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtID.ImeMode = System.Windows.Forms.ImeMode.Disable;
+            this.txtID.Location = new System.Drawing.Point(316, 103);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(355, 28);
+            this.txtID.Size = new System.Drawing.Size(473, 34);
             this.txtID.TabIndex = 2;
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(237, 127);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtName.Location = new System.Drawing.Point(316, 156);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(357, 28);
+            this.txtName.Size = new System.Drawing.Size(475, 34);
             this.txtName.TabIndex = 3;
             // 
             // txtPhone
             // 
             this.txtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhone.Location = new System.Drawing.Point(237, 166);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtPhone.Location = new System.Drawing.Point(316, 204);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(357, 28);
+            this.txtPhone.Size = new System.Drawing.Size(475, 34);
             this.txtPhone.TabIndex = 4;
             // 
             // txtGmail
             // 
             this.txtGmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGmail.Location = new System.Drawing.Point(237, 205);
-            this.txtGmail.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtGmail.Location = new System.Drawing.Point(316, 252);
+            this.txtGmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtGmail.Name = "txtGmail";
-            this.txtGmail.Size = new System.Drawing.Size(357, 28);
+            this.txtGmail.Size = new System.Drawing.Size(475, 34);
             this.txtGmail.TabIndex = 5;
             // 
             // txtCMT
             // 
             this.txtCMT.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMT.Location = new System.Drawing.Point(237, 240);
-            this.txtCMT.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtCMT.Location = new System.Drawing.Point(316, 295);
+            this.txtCMT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCMT.Name = "txtCMT";
-            this.txtCMT.Size = new System.Drawing.Size(357, 28);
+            this.txtCMT.Size = new System.Drawing.Size(475, 34);
             this.txtCMT.TabIndex = 6;
             // 
             // txtAddress
             // 
             this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddress.Location = new System.Drawing.Point(237, 282);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtAddress.Location = new System.Drawing.Point(316, 347);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(357, 28);
+            this.txtAddress.Size = new System.Drawing.Size(475, 34);
             this.txtAddress.TabIndex = 7;
             // 
             // txtNation
             // 
             this.txtNation.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNation.Location = new System.Drawing.Point(237, 318);
-            this.txtNation.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.txtNation.Location = new System.Drawing.Point(316, 391);
+            this.txtNation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNation.Name = "txtNation";
-            this.txtNation.Size = new System.Drawing.Size(357, 28);
+            this.txtNation.Size = new System.Drawing.Size(475, 34);
             this.txtNation.TabIndex = 8;
             // 
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnThoat.Location = new System.Drawing.Point(671, 317);
+            this.btnThoat.Location = new System.Drawing.Point(895, 390);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(100, 45);
+            this.btnThoat.Size = new System.Drawing.Size(133, 55);
             this.btnThoat.TabIndex = 17;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -220,9 +214,10 @@ namespace QLKS
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnXoa.Location = new System.Drawing.Point(671, 266);
+            this.btnXoa.Location = new System.Drawing.Point(895, 327);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(100, 45);
+            this.btnXoa.Size = new System.Drawing.Size(133, 55);
             this.btnXoa.TabIndex = 16;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -231,9 +226,10 @@ namespace QLKS
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnSua.Location = new System.Drawing.Point(671, 214);
+            this.btnSua.Location = new System.Drawing.Point(895, 263);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(100, 45);
+            this.btnSua.Size = new System.Drawing.Size(133, 55);
             this.btnSua.TabIndex = 15;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -243,9 +239,10 @@ namespace QLKS
             // 
             this.btnLuu.Enabled = false;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnLuu.Location = new System.Drawing.Point(671, 162);
+            this.btnLuu.Location = new System.Drawing.Point(895, 199);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(100, 45);
+            this.btnLuu.Size = new System.Drawing.Size(133, 55);
             this.btnLuu.TabIndex = 14;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -254,9 +251,10 @@ namespace QLKS
             // btnTaoMoi
             // 
             this.btnTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.btnTaoMoi.Location = new System.Drawing.Point(671, 110);
+            this.btnTaoMoi.Location = new System.Drawing.Point(895, 135);
+            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaoMoi.Name = "btnTaoMoi";
-            this.btnTaoMoi.Size = new System.Drawing.Size(100, 45);
+            this.btnTaoMoi.Size = new System.Drawing.Size(133, 55);
             this.btnTaoMoi.TabIndex = 13;
             this.btnTaoMoi.Text = "Tạo mới";
             this.btnTaoMoi.UseVisualStyleBackColor = true;
@@ -265,21 +263,22 @@ namespace QLKS
             // dataGridKhachHang
             // 
             this.dataGridKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridKhachHang.Location = new System.Drawing.Point(109, 378);
-            this.dataGridKhachHang.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.dataGridKhachHang.Location = new System.Drawing.Point(145, 465);
+            this.dataGridKhachHang.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridKhachHang.Name = "dataGridKhachHang";
             this.dataGridKhachHang.RowHeadersWidth = 51;
             this.dataGridKhachHang.RowTemplate.Height = 24;
-            this.dataGridKhachHang.Size = new System.Drawing.Size(662, 122);
+            this.dataGridKhachHang.Size = new System.Drawing.Size(883, 150);
             this.dataGridKhachHang.TabIndex = 18;
             this.dataGridKhachHang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridKhachHang_CellContentClick);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.button1.Location = new System.Drawing.Point(662, 59);
+            this.button1.Location = new System.Drawing.Point(883, 73);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 45);
+            this.button1.Size = new System.Drawing.Size(159, 55);
             this.button1.TabIndex = 19;
             this.button1.Text = "Đặt Phòng";
             this.button1.UseVisualStyleBackColor = true;
@@ -287,9 +286,9 @@ namespace QLKS
             // 
             // Frm_KHACHHANG
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 487);
+            this.ClientSize = new System.Drawing.Size(1115, 599);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridKhachHang);
             this.Controls.Add(this.btnThoat);
@@ -312,7 +311,7 @@ namespace QLKS
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblID);
             this.Controls.Add(this.lblTitle);
-            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Frm_KHACHHANG";
             this.Text = "Frm_KHACHHANG";
             this.Load += new System.EventHandler(this.Frm_KHACHHANG_Load);

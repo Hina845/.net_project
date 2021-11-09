@@ -23,7 +23,7 @@ namespace QLKS
         private void Bang_KhachHang()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select * from KHACH_HANG");
+            dta = kn.Lay_DulieuBang("Select * from KHACH_HANG order by ID DESC");
             dataGridKhachHang.DataSource = dta;
             HienThi_DuLieu();
         }
@@ -31,7 +31,7 @@ namespace QLKS
         private void Bang_KhachHang1()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("Select * from KHACH_HANG");
+            dta = kn.Lay_DulieuBang("Select * from KHACH_HANG order by ID DESC");
             dataGridKhachHang.DataSource = dta;
             HienThi_DuLieu1();
 
@@ -40,7 +40,9 @@ namespace QLKS
         private void Frm_KHACHHANG_Load(object sender, EventArgs e)
         {
             Bang_KhachHang();
-            
+
+           
+
         }
         public void HienThi_DuLieu()
         {
@@ -98,7 +100,10 @@ namespace QLKS
 
         private void btnTaoMoi_Click(object sender, EventArgs e)
         {
-            txtID.Value = 0;
+            DataTable dtaID = kn.Lay_DulieuBang("select MAX(ID) AS ID from KHACH_HANG ");
+            txtID.DataBindings.Clear();
+            txtID.DataBindings.Add("Value", dtaID, "ID");
+            txtID.Value = txtID.Value + 1;
             txtName.Text = "";
             txtPhone.Text = "";
             txtCMT.Text = "";
@@ -107,32 +112,62 @@ namespace QLKS
             txtNation.Text = "";
             txtID.Focus();
             btnLuu.Enabled = true;
+            txtID.Enabled = false;
+            
         }
 
        // public int ID = txtID.Value;
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            string sql_luu;
-            sql_luu = "INSERT INTO KHACH_HANG VALUES (" + txtID.Value + " , '" + txtName.Text + "' , '" + txtPhone.Text + "' , '" + txtGmail.Text + "' , '" + txtCMT.Text + "' , '" + txtAddress.Text + "' , '" + txtNation.Text + "')";
-            kn.ThucThi(sql_luu);
-            Bang_KhachHang1();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có chắc chắn muốn lưu không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (thongbao == DialogResult.OK)
+            {
+                string sql_luu;
+                sql_luu = "INSERT INTO KHACH_HANG VALUES (" + txtID.Value + " , '" + txtName.Text + "' , '" + txtPhone.Text + "' , '" + txtGmail.Text + "' , '" + txtCMT.Text + "' , '" + txtAddress.Text + "' , '" + txtNation.Text + "')";
+                kn.ThucThi(sql_luu);
+                Bang_KhachHang();
+                MessageBox.Show("Đã lưu phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+
+            }
+
+
+
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            string sql_sua;
-            sql_sua = "UPDATE KHACH_HANG SET TEN = '" + txtName.Text + "' , SDT = '" + txtPhone.Text + "' , GMAIL = '" + txtGmail.Text + "' , CMND = '" + txtCMT.Text + "' , DIA_CHI = '" + txtAddress.Text + "' ,QUOC_GIA = '" + txtNation.Text + "' WHERE ID = " + txtID.Value +" ";
-            kn.ThucThi(sql_sua);
-            Bang_KhachHang();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có chắc chắn muốn sửa không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (thongbao == DialogResult.OK)
+            {
+                string sql_sua;
+                sql_sua = "UPDATE KHACH_HANG SET TEN = '" + txtName.Text + "' , SDT = '" + txtPhone.Text + "' , GMAIL = '" + txtGmail.Text + "' , CMND = '" + txtCMT.Text + "' , DIA_CHI = '" + txtAddress.Text + "' ,QUOC_GIA = '" + txtNation.Text + "' WHERE ID = " + txtID.Value + " ";
+                kn.ThucThi(sql_sua);
+                Bang_KhachHang();
+                MessageBox.Show("Đã sửa phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+
+            }
+
+
+
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string sql_xoa;
-            sql_xoa = "DELETE KHACH_HANG WHERE ID = " + txtID.Value + " ";
-            kn.ThucThi(sql_xoa);
-            Bang_KhachHang();
+            DialogResult thongbao;
+            thongbao = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (thongbao == DialogResult.OK) {
+                string sql_xoa;
+                sql_xoa = "DELETE KHACH_HANG WHERE ID = " + txtID.Value + " ";
+                kn.ThucThi(sql_xoa);
+                Bang_KhachHang();
+                MessageBox.Show("Đã xóa phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            }
+            
+            
+            
         }
 
         private void btnThoat_Click(object sender, EventArgs e)

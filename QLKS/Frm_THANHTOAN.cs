@@ -90,6 +90,7 @@ namespace QLKS
         {
             String sqlinsert = "insert into [HOA_DON_PHONG] values("+txt_IDhoadon.Value+ ","+txt_nguoixacnhan.Text+ ","+txt_IDphong.Value+ ",'"+txt_lydo.Text+ "',"+lb_hientongtien.Text+ ",'"+txt_ngaythanhtoan.Value+"');";
             MessageBox.Show("Đã xuất hóa đơn");
+            FrmBaoCao baocao = new FrmBaoCao(IDphong);
         }
     }
 }
