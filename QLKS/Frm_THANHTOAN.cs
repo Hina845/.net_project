@@ -89,8 +89,9 @@ namespace QLKS
         private void btn_xuathoadon_Click(object sender, EventArgs e)
         {
             String sqlinsert = "insert into [HOA_DON_PHONG] values("+txt_IDhoadon.Value+ ","+txt_nguoixacnhan.Text+ ","+txt_IDphong.Value+ ",'"+txt_lydo.Text+ "',"+lb_hientongtien.Text+ ",'"+txt_ngaythanhtoan.Value+"');";
+            kn.ThucThi(sqlinsert);
             MessageBox.Show("Đã xuất hóa đơn");
-            FrmBaoCao baocao = new FrmBaoCao(IDphong);
+            FrmBaoCao baocao = new FrmBaoCao(this.IDphong);
             baocao.Show();
             this.Hide();
         }
