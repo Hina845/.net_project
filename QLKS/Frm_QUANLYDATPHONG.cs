@@ -22,7 +22,7 @@ namespace QLKS
         public void BANG_QUANLYDATPHONG()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN, dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN, dp.NGAY_DI as NGAY_DI,  dkp.ID as ID_Phong FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG");
+            dta = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN, dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN, dp.NGAY_DI as NGAY_DI,  dkp.ID_PHONG as ID_Phong FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG");
             dataGridView1.DataSource = dta;
             HIENTHI_DULIEU();
         }
@@ -135,7 +135,7 @@ namespace QLKS
             dataGridView1.DataSource = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN,"
                                                            + " dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN,"
                                                            + " dp.NGAY_DI as NGAY_DI,"
-                                                           + " dkp.ID as ID_Phong"
+                                                           + " dkp.ID_PHONG as ID_Phong"
                                                             + "FROM DAT_PHONG as dp"
                                                             + "INNER JOIN DANG_KY_PHONG as dkp"
                                                             + "ON dp.ID = dkp.ID_DAT_PHONG"
@@ -155,7 +155,7 @@ namespace QLKS
             txt_IDphong.Visible = true;
             
             //lấy dữ liệu từ bảng DAT_PHONG có ngày đi trừ ngày đến <=0
-            DataTable dtaID = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN, dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN, dp.NGAY_DI as NGAY_DI,  dkp.ID as ID_Phong FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG where DATEDIFF(DAY,GETDATE(),NGAY_DI)<=0 AND ID_Phong NOT IN(SELECT ID_PHONG FROM HOA_DON_PHONG)");
+            DataTable dtaID = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN, dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN, dp.NGAY_DI as NGAY_DI,  dkp.ID_PHONG as ID_Phong FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG where DATEDIFF(DAY,GETDATE(),NGAY_DI)<=0 AND ID_Phong NOT IN(SELECT ID_PHONG FROM HOA_DON_PHONG)");
             //hiện bảng lên dataGridView1
             dataGridView1.DataSource = dtaID;
             // hiện thị dũ liệu
@@ -199,9 +199,12 @@ namespace QLKS
         private void btn_ThanhToan_Click(object sender, EventArgs e)
         {
             
-            DataTable dtaIDq = kn.Lay_DulieuBang("SELECT (DATEDIFF(DAY,NGAY_DEN,NGAY_DI)+1) as SO_NGAY  FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG where DATEDIFF(DAY,NGAY_DI,GETDATE())<=0 AND ID_Phong NOT IN(SELECT ID_PHONG FROM HOA_DON_PHONG) and ID_Phong="+txt_IDphong.Value);
+            DataTable dtaIDq = kn.Lay_DulieuBang("SELECT (DATEDIFF(DAY,NGAY_DEN,NGAY_DI)+1) as SO_NGAY  FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG where DATEDIFF(DAY,NGAY_DI,GETDATE())>=0 AND ID_Phong NOT IN(SELECT ID_PHONG FROM HOA_DON_PHONG) and ID_Phong="+txt_IDphong.Value+"");
             txt_songayo.DataBindings.Clear();
             txt_songayo.DataBindings.Add("Value", dtaIDq, "SO_NGAY");
+            Console.WriteLine("so ngay o "+txt_songayo.Value);
+            Console.WriteLine("so ID phong "+ txt_IDphong.Value);
+            Console.WriteLine("so ID dat phong "+ txt_datphong.Value);
             decimal a = txt_datphong.Value;
             decimal c = txt_IDphong.Value;
             decimal p = txt_songayo.Value;

@@ -12,11 +12,11 @@ namespace QLKS
 {
     public partial class FrmBaoCao : Form
     {
-        private int idPhong;
+        private int idHoaDon;
         public FrmBaoCao(int a)
         {
             InitializeComponent();
-            this.idPhong = a;
+            this.idHoaDon = a;
         }
 
         private void crystalReportViewer1_Load(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace QLKS
         private void FrmBaoCao_Load(object sender, EventArgs e)
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("select * from phong where id = "+idPhong+"");
+            dta = kn.Lay_DulieuBang("select * from hoa_don_phong where id ="+idHoaDon);
             HOADON bc = new HOADON();
             bc.SetDataSource(dta);
             crvTest.ReportSource=bc;
