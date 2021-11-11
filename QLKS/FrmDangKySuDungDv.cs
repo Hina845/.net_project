@@ -58,6 +58,7 @@ namespace QLKS
         private void btnTaoMoi_Click(object sender, EventArgs e)
         {
             DataTable dtaId = kn.Lay_DulieuBang("select (MAX(id)+1) as id from chi_tiet_su_dung_dv");
+            nmrID.DataBindings.Clear();
             nmrID.DataBindings.Add("value", dtaId, "id");
             btnLuu.Enabled = true;
         }

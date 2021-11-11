@@ -51,6 +51,7 @@ namespace QLKS
 
             //them dl vao bang DAT_PHONG
             String sql = "Insert into DAT_PHONG VALUES("+txt_datphong.Value+","+txt_khachang.Value+","+txt_nhanvienthuchien.Text+","+txt_songuoi.Value+","+txt_sophong.Value+",'"+txt_ngaydat.Value+"','"+txt_ngayden.Value+"','"+txt_ngaydi.Value+"')";
+            Console.WriteLine(sql);
             kn.ThucThi(sql);
                 
             Frm_DANGKIPHONG frm = new Frm_DANGKIPHONG(b, d);

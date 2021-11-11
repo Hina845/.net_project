@@ -58,7 +58,7 @@ namespace QLKS
             DataTable dtatiendichvu = kn.Lay_DulieuBang("SELECT ctdv.ID_PHONG , ctdv.ID_DICH_VU,ctdv.NGAY_DUNG,dv.TEN,dv.GIA FROM CHI_TIET_SU_DUNG_DV as ctdv INNER JOIN DICH_VU as dv ON ctdv.ID_DICH_VU=dv.ID where ctdv.ID_PHONG =" + txt_IDphong.Value+";");
             dataGridView1.DataSource = dtatiendichvu;
             //hiển thị tổng tiền dịch vụ
-            DataTable dtahienthitiendv = kn.Lay_DulieuBang("SELECT SUM(dv.GIA) as TONG_TIEN_DICH_VU FROM CHI_TIET_SU_DUNG_DV as ctdv INNER JOIN DICH_VU as dv ON ctdv.ID_DICH_VU=dv.ID where ctdv.ID_PHONG=" + txt_IDphong.Value+";");
+            DataTable dtahienthitiendv = kn.Lay_DulieuBang("SELECT  SUM(dv.GIA) as TONG_TIEN_DICH_VU FROM CHI_TIET_SU_DUNG_DV as ctdv INNER JOIN DICH_VU as dv ON ctdv.ID_DICH_VU=dv.ID where ctdv.ID_PHONG=" + txt_IDphong.Value+" and ctdv.NGAY_DUNG >= (select DAT_PHONG.NGAY_DEN from DAT_PHONG where id = "+txt_IDdatphong.Value+")");
             txt_tiendichvu.DataBindings.Clear();
             txt_tiendichvu.DataBindings.Add("Text", dtahienthitiendv, "TONG_TIEN_DICH_VU");
             if (txt_tiendichvu.Text != "")
@@ -90,7 +90,8 @@ namespace QLKS
         {
             String sqlinsert = "insert into [HOA_DON_PHONG] values("+txt_IDhoadon.Value+ ","+txt_nguoixacnhan.Text+ ","+txt_IDphong.Value+ ",'"+txt_lydo.Text+ "',"+lb_hientongtien.Text+ ",'"+txt_ngaythanhtoan.Value+"');";
             kn.ThucThi(sqlinsert);
-            MessageBox.Show("Đã xuất hóa đơn");
+            String sqlUpdate = "update phong set trang_thai = 'Trong'";
+            MessageBox.Show("Đang xuất hóa đơn, vui lòng đợi!");
             int idHoaDon = decimal.ToInt32(txt_IDhoadon.Value);
             FrmBaoCao baocao = new FrmBaoCao(idHoaDon);
             baocao.Show();

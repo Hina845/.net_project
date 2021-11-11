@@ -56,7 +56,9 @@ namespace QLKS
 
         private void btn_TaoMoi_Click(object sender, EventArgs e)
         {
-            txt_ID.Value = 0;
+            DataTable dta = kn.Lay_DulieuBang("select (Max(id)+1) as id from dich_vu");
+            txt_ID.DataBindings.Clear();
+            txt_ID.DataBindings.Add("value", dta, "id");
             txt_Ten.Text = "";
             txt_Gia.Text = "";
             txt_ID.Focus();
@@ -79,7 +81,7 @@ namespace QLKS
             DialogResult result = MessageBox.Show("Bạn chắc chắn muốn sửa thông tin dịch vụ này trong danh sách dịch vụ?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (result == System.Windows.Forms.DialogResult.OK)
             {
-                string sql_sua = "update  DICH_VU set TEN = '" + txt_Ten.Text + "' , GIA=" + txt_Gia.Text + " where ma_PB=" + txt_ID.Text;
+                string sql_sua = "update  DICH_VU set TEN = '" + txt_Ten.Text + "' , GIA=" + txt_Gia.Text + " where id=" + txt_ID.Text;
                 kn.ThucThi(sql_sua);
                 BANG_DICHVU();
             }
