@@ -91,7 +91,8 @@ namespace QLKS
             String sqlinsert = "insert into [HOA_DON_PHONG] values("+txt_IDhoadon.Value+ ","+txt_nguoixacnhan.Text+ ","+txt_IDphong.Value+ ",'"+txt_lydo.Text+ "',"+lb_hientongtien.Text+ ",'"+txt_ngaythanhtoan.Value+"');";
             kn.ThucThi(sqlinsert);
             MessageBox.Show("Đã xuất hóa đơn");
-            FrmBaoCao baocao = new FrmBaoCao(this.IDphong);
+            int idHoaDon = decimal.ToInt32(txt_IDhoadon.Value);
+            FrmBaoCao baocao = new FrmBaoCao(idHoaDon);
             baocao.Show();
             this.Hide();
         }
