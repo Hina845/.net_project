@@ -162,6 +162,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLKSDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormChiTietThietBi.resx">
       <DependentUpon>FormChiTietThietBi.cs</DependentUpon>
     </EmbeddedResource>
