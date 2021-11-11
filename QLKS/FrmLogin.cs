@@ -31,10 +31,10 @@ namespace QLKS
 
             if (datRed.Read() == true)
             {
-                MessageBox.Show("Đăng nhập thành công!!");
-                //Form frmmain = new FrmMain();
-                //frmmain.Show();
-                //this.Hide();
+                //MessageBox.Show("Đăng nhập thành công!!");
+                Form frmmain = new FrmMain();
+                frmmain.Show();
+                this.Hide();
             }
             else
             {
@@ -59,6 +59,38 @@ namespace QLKS
         private void FrmLogin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtDangNhap_Enter(object sender, EventArgs e)
+        {
+            if (txtDangNhap.Text == "Username")
+            {
+                txtDangNhap.Text = "";
+            }
+        }
+
+        private void txtDangNhap_Leave(object sender, EventArgs e)
+        {
+            if (txtDangNhap.Text == "")
+            {
+                txtDangNhap.Text = "Username";
+            }
+        }
+
+        private void txtMatKhau_Enter(object sender, EventArgs e)
+        {
+            if (txtMatKhau.Text == "Password")
+            {
+                txtMatKhau.Text = "";
+            }
+        }
+
+        private void txtMatKhau_Leave(object sender, EventArgs e)
+        {
+            if (txtMatKhau.Text == "")
+            {
+                txtMatKhau.Text = "Password";
+            }
         }
     }
 }

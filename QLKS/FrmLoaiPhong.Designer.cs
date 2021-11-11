@@ -29,7 +29,9 @@ namespace QLKS
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbltitle = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblma_loai = new System.Windows.Forms.Label();
             this.lblten_loai = new System.Windows.Forms.Label();
             this.lblso_nguoi = new System.Windows.Forms.Label();
@@ -44,225 +46,281 @@ namespace QLKS
             this.btnluu = new System.Windows.Forms.Button();
             this.btnsua = new System.Windows.Forms.Button();
             this.btnxoa = new System.Windows.Forms.Button();
-            this.btnthoat = new System.Windows.Forms.Button();
             this.dataGridLoaiPhong = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.txtma_loai)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtso_nguoi)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtgia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridLoaiPhong)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbltitle
-            // 
-            this.lbltitle.AutoSize = true;
-            this.lbltitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltitle.Location = new System.Drawing.Point(365, 21);
-            this.lbltitle.Name = "lbltitle";
-            this.lbltitle.Size = new System.Drawing.Size(196, 33);
-            this.lbltitle.TabIndex = 0;
-            this.lbltitle.Text = "LOẠI PHÒNG";
             // 
             // lblma_loai
             // 
             this.lblma_loai.AutoSize = true;
-            this.lblma_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblma_loai.Location = new System.Drawing.Point(93, 97);
+            this.lblma_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblma_loai.Location = new System.Drawing.Point(54, 22);
+            this.lblma_loai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblma_loai.Name = "lblma_loai";
-            this.lblma_loai.Size = new System.Drawing.Size(70, 24);
+            this.lblma_loai.Size = new System.Drawing.Size(59, 20);
             this.lblma_loai.TabIndex = 1;
             this.lblma_loai.Text = "Mã loại";
             // 
             // lblten_loai
             // 
             this.lblten_loai.AutoSize = true;
-            this.lblten_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblten_loai.Location = new System.Drawing.Point(93, 133);
+            this.lblten_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblten_loai.Location = new System.Drawing.Point(178, 22);
+            this.lblten_loai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblten_loai.Name = "lblten_loai";
-            this.lblten_loai.Size = new System.Drawing.Size(78, 24);
+            this.lblten_loai.Size = new System.Drawing.Size(64, 20);
             this.lblten_loai.TabIndex = 1;
             this.lblten_loai.Text = "Tên loại";
             // 
             // lblso_nguoi
             // 
             this.lblso_nguoi.AutoSize = true;
-            this.lblso_nguoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblso_nguoi.Location = new System.Drawing.Point(93, 170);
+            this.lblso_nguoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblso_nguoi.Location = new System.Drawing.Point(54, 85);
+            this.lblso_nguoi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblso_nguoi.Name = "lblso_nguoi";
-            this.lblso_nguoi.Size = new System.Drawing.Size(86, 24);
+            this.lblso_nguoi.Size = new System.Drawing.Size(72, 20);
             this.lblso_nguoi.TabIndex = 1;
             this.lblso_nguoi.Text = "Số người";
             // 
             // lblgia
             // 
             this.lblgia.AutoSize = true;
-            this.lblgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblgia.Location = new System.Drawing.Point(93, 208);
+            this.lblgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblgia.Location = new System.Drawing.Point(268, 85);
+            this.lblgia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblgia.Name = "lblgia";
-            this.lblgia.Size = new System.Drawing.Size(38, 24);
+            this.lblgia.Size = new System.Drawing.Size(34, 20);
             this.lblgia.TabIndex = 1;
             this.lblgia.Text = "Giá";
             // 
             // lblmo_ta
             // 
             this.lblmo_ta.AutoSize = true;
-            this.lblmo_ta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmo_ta.Location = new System.Drawing.Point(93, 242);
+            this.lblmo_ta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmo_ta.Location = new System.Drawing.Point(54, 152);
+            this.lblmo_ta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblmo_ta.Name = "lblmo_ta";
-            this.lblmo_ta.Size = new System.Drawing.Size(56, 24);
+            this.lblmo_ta.Size = new System.Drawing.Size(49, 20);
             this.lblmo_ta.TabIndex = 1;
             this.lblmo_ta.Text = "Mô tả";
             // 
             // txtten_loai
             // 
-            this.txtten_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtten_loai.Location = new System.Drawing.Point(209, 128);
+            this.txtten_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtten_loai.Location = new System.Drawing.Point(182, 46);
+            this.txtten_loai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtten_loai.Name = "txtten_loai";
-            this.txtten_loai.Size = new System.Drawing.Size(493, 29);
+            this.txtten_loai.Size = new System.Drawing.Size(599, 26);
             this.txtten_loai.TabIndex = 2;
             // 
             // txtmo_ta
             // 
-            this.txtmo_ta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmo_ta.Location = new System.Drawing.Point(209, 237);
+            this.txtmo_ta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmo_ta.Location = new System.Drawing.Point(58, 176);
+            this.txtmo_ta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtmo_ta.Name = "txtmo_ta";
-            this.txtmo_ta.Size = new System.Drawing.Size(493, 29);
+            this.txtmo_ta.Size = new System.Drawing.Size(723, 26);
             this.txtmo_ta.TabIndex = 2;
             // 
             // txtma_loai
             // 
-            this.txtma_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtma_loai.Location = new System.Drawing.Point(209, 92);
+            this.txtma_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtma_loai.Location = new System.Drawing.Point(58, 46);
+            this.txtma_loai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtma_loai.Name = "txtma_loai";
-            this.txtma_loai.Size = new System.Drawing.Size(492, 29);
+            this.txtma_loai.Size = new System.Drawing.Size(99, 26);
             this.txtma_loai.TabIndex = 3;
             // 
             // txtso_nguoi
             // 
-            this.txtso_nguoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtso_nguoi.Location = new System.Drawing.Point(209, 165);
+            this.txtso_nguoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtso_nguoi.Location = new System.Drawing.Point(58, 109);
+            this.txtso_nguoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtso_nguoi.Name = "txtso_nguoi";
-            this.txtso_nguoi.Size = new System.Drawing.Size(492, 29);
+            this.txtso_nguoi.Size = new System.Drawing.Size(191, 26);
             this.txtso_nguoi.TabIndex = 3;
             // 
             // txtgia
             // 
-            this.txtgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtgia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtgia.Increment = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.txtgia.Location = new System.Drawing.Point(209, 200);
+            this.txtgia.Location = new System.Drawing.Point(272, 109);
+            this.txtgia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtgia.Maximum = new decimal(new int[] {
             100000000,
             0,
             0,
             0});
             this.txtgia.Name = "txtgia";
-            this.txtgia.Size = new System.Drawing.Size(492, 29);
+            this.txtgia.Size = new System.Drawing.Size(509, 26);
             this.txtgia.TabIndex = 3;
             // 
             // btntao_moi
             // 
-            this.btntao_moi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btntao_moi.Location = new System.Drawing.Point(775, 92);
+            this.btntao_moi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btntao_moi.FlatAppearance.BorderSize = 0;
+            this.btntao_moi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btntao_moi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntao_moi.Location = new System.Drawing.Point(876, 43);
+            this.btntao_moi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btntao_moi.Name = "btntao_moi";
-            this.btntao_moi.Size = new System.Drawing.Size(105, 43);
+            this.btntao_moi.Size = new System.Drawing.Size(91, 42);
             this.btntao_moi.TabIndex = 4;
             this.btntao_moi.Text = "Tạo mới";
-            this.btntao_moi.UseVisualStyleBackColor = true;
+            this.btntao_moi.UseVisualStyleBackColor = false;
             this.btntao_moi.Click += new System.EventHandler(this.btntao_moi_Click);
             // 
             // btnluu
             // 
-            this.btnluu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnluu.Location = new System.Drawing.Point(775, 141);
+            this.btnluu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnluu.FlatAppearance.BorderSize = 0;
+            this.btnluu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnluu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnluu.Location = new System.Drawing.Point(876, 93);
+            this.btnluu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnluu.Name = "btnluu";
-            this.btnluu.Size = new System.Drawing.Size(105, 43);
+            this.btnluu.Size = new System.Drawing.Size(91, 42);
             this.btnluu.TabIndex = 4;
             this.btnluu.Text = "Lưu";
-            this.btnluu.UseVisualStyleBackColor = true;
+            this.btnluu.UseVisualStyleBackColor = false;
             this.btnluu.Click += new System.EventHandler(this.btnluu_Click);
             // 
             // btnsua
             // 
-            this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsua.Location = new System.Drawing.Point(775, 190);
+            this.btnsua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnsua.FlatAppearance.BorderSize = 0;
+            this.btnsua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsua.Location = new System.Drawing.Point(876, 143);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(105, 43);
+            this.btnsua.Size = new System.Drawing.Size(91, 42);
             this.btnsua.TabIndex = 4;
             this.btnsua.Text = "Sửa";
-            this.btnsua.UseVisualStyleBackColor = true;
+            this.btnsua.UseVisualStyleBackColor = false;
             this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // btnxoa
             // 
-            this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnxoa.Location = new System.Drawing.Point(775, 239);
+            this.btnxoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnxoa.FlatAppearance.BorderSize = 0;
+            this.btnxoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxoa.Location = new System.Drawing.Point(876, 193);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(105, 43);
+            this.btnxoa.Size = new System.Drawing.Size(91, 42);
             this.btnxoa.TabIndex = 4;
             this.btnxoa.Text = "Xóa";
-            this.btnxoa.UseVisualStyleBackColor = true;
+            this.btnxoa.UseVisualStyleBackColor = false;
             this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
-            // 
-            // btnthoat
-            // 
-            this.btnthoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnthoat.Location = new System.Drawing.Point(775, 288);
-            this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(105, 43);
-            this.btnthoat.TabIndex = 4;
-            this.btnthoat.Text = "Thoát";
-            this.btnthoat.UseVisualStyleBackColor = true;
-            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // dataGridLoaiPhong
             // 
+            this.dataGridLoaiPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridLoaiPhong.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridLoaiPhong.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridLoaiPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridLoaiPhong.Location = new System.Drawing.Point(97, 288);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridLoaiPhong.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridLoaiPhong.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.dataGridLoaiPhong.Location = new System.Drawing.Point(23, 266);
+            this.dataGridLoaiPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridLoaiPhong.Name = "dataGridLoaiPhong";
-            this.dataGridLoaiPhong.Size = new System.Drawing.Size(603, 230);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridLoaiPhong.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridLoaiPhong.Size = new System.Drawing.Size(944, 278);
             this.dataGridLoaiPhong.TabIndex = 5;
             this.dataGridLoaiPhong.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridLoaiPhong_CellContentClick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.txtgia);
+            this.panel1.Controls.Add(this.lblma_loai);
+            this.panel1.Controls.Add(this.lblten_loai);
+            this.panel1.Controls.Add(this.lblso_nguoi);
+            this.panel1.Controls.Add(this.lblgia);
+            this.panel1.Controls.Add(this.lblmo_ta);
+            this.panel1.Controls.Add(this.txtso_nguoi);
+            this.panel1.Controls.Add(this.txtten_loai);
+            this.panel1.Controls.Add(this.txtma_loai);
+            this.panel1.Controls.Add(this.txtmo_ta);
+            this.panel1.Location = new System.Drawing.Point(23, 17);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(840, 237);
+            this.panel1.TabIndex = 6;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 227);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(840, 10);
+            this.panel2.TabIndex = 4;
+            // 
             // FrmLoaiPhong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(943, 536);
+            this.ClientSize = new System.Drawing.Size(993, 557);
             this.Controls.Add(this.dataGridLoaiPhong);
-            this.Controls.Add(this.btnthoat);
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.btnsua);
             this.Controls.Add(this.btnluu);
             this.Controls.Add(this.btntao_moi);
-            this.Controls.Add(this.txtgia);
-            this.Controls.Add(this.txtso_nguoi);
-            this.Controls.Add(this.txtma_loai);
-            this.Controls.Add(this.txtmo_ta);
-            this.Controls.Add(this.txtten_loai);
-            this.Controls.Add(this.lblmo_ta);
-            this.Controls.Add(this.lblgia);
-            this.Controls.Add(this.lblso_nguoi);
-            this.Controls.Add(this.lblten_loai);
-            this.Controls.Add(this.lblma_loai);
-            this.Controls.Add(this.lbltitle);
+            this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmLoaiPhong";
-            this.Text = "FrmLoaiPhong";
+            this.Text = "QUẢN LÝ LOẠI PHÒNG";
             this.Load += new System.EventHandler(this.FrmLoaiPhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtma_loai)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtso_nguoi)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtgia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridLoaiPhong)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbltitle;
         private System.Windows.Forms.Label lblma_loai;
         private System.Windows.Forms.Label lblten_loai;
         private System.Windows.Forms.Label lblso_nguoi;
@@ -277,7 +335,8 @@ namespace QLKS
         private System.Windows.Forms.Button btnluu;
         private System.Windows.Forms.Button btnsua;
         private System.Windows.Forms.Button btnxoa;
-        private System.Windows.Forms.Button btnthoat;
         private System.Windows.Forms.DataGridView dataGridLoaiPhong;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }

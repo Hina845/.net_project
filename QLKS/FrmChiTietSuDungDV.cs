@@ -107,5 +107,15 @@ namespace QLKS
         {
             ChiTietSuDungDV();
         }
+
+        private void dateNgayDat_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbNgayDung_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
