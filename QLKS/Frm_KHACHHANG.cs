@@ -128,7 +128,7 @@ namespace QLKS
                 sql_luu = "INSERT INTO KHACH_HANG VALUES (" + txtID.Value + " , '" + txtName.Text + "' , '" + txtPhone.Text + "' , '" + txtGmail.Text + "' , '" + txtCMT.Text + "' , '" + txtAddress.Text + "' , '" + txtNation.Text + "')";
                 kn.ThucThi(sql_luu);
                 Bang_KhachHang();
-                MessageBox.Show("Đã lưu phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                MessageBox.Show("Đã lưu thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
             }
 
@@ -146,7 +146,7 @@ namespace QLKS
                 sql_sua = "UPDATE KHACH_HANG SET TEN = '" + txtName.Text + "' , SDT = '" + txtPhone.Text + "' , GMAIL = '" + txtGmail.Text + "' , CMND = '" + txtCMT.Text + "' , DIA_CHI = '" + txtAddress.Text + "' ,QUOC_GIA = '" + txtNation.Text + "' WHERE ID = " + txtID.Value + " ";
                 kn.ThucThi(sql_sua);
                 Bang_KhachHang();
-                MessageBox.Show("Đã sửa phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                MessageBox.Show("Đã sửa thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
 
             }
 
@@ -163,7 +163,7 @@ namespace QLKS
                 sql_xoa = "DELETE KHACH_HANG WHERE ID = " + txtID.Value + " ";
                 kn.ThucThi(sql_xoa);
                 Bang_KhachHang();
-                MessageBox.Show("Đã xóa phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                MessageBox.Show("Đã xóa thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
             
             
@@ -186,7 +186,7 @@ namespace QLKS
             int b = decimal.ToInt32(a);
             Frm_DATPHONG frm = new Frm_DATPHONG(b);
             frm.Show();
-            this.Hide();
+            //this.Hide();
         }
     }
 }

@@ -35,7 +35,6 @@ namespace QLKS
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.pictureLogo1 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -62,8 +61,8 @@ namespace QLKS
             this.panelLogo = new System.Windows.Forms.Panel();
             this.pictureLogo2 = new System.Windows.Forms.PictureBox();
             this.panelContent = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
@@ -73,6 +72,7 @@ namespace QLKS
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo2)).BeginInit();
             this.panelContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btnUser
@@ -138,17 +138,6 @@ namespace QLKS
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "HELLO";
             // 
-            // pictureLogo1
-            // 
-            this.pictureLogo1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureLogo1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureLogo1.BackgroundImage")));
-            this.pictureLogo1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureLogo1.Location = new System.Drawing.Point(523, 226);
-            this.pictureLogo1.Name = "pictureLogo1";
-            this.pictureLogo1.Size = new System.Drawing.Size(450, 192);
-            this.pictureLogo1.TabIndex = 0;
-            this.pictureLogo1.TabStop = false;
-            // 
             // btnExit
             // 
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
@@ -190,7 +179,7 @@ namespace QLKS
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(38, 117);
+            this.button1.Location = new System.Drawing.Point(43, 117);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 43);
             this.button1.TabIndex = 1;
@@ -199,7 +188,7 @@ namespace QLKS
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(18, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(23, 11);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 236);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -338,7 +327,7 @@ namespace QLKS
             this.btnDKSDDV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
             this.btnDKSDDV.Location = new System.Drawing.Point(0, 70);
             this.btnDKSDDV.Name = "btnDKSDDV";
-            this.btnDKSDDV.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
+            this.btnDKSDDV.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btnDKSDDV.Size = new System.Drawing.Size(208, 35);
             this.btnDKSDDV.TabIndex = 8;
             this.btnDKSDDV.Text = "Đăng ký sử dụng dịch vụ";
@@ -535,26 +524,36 @@ namespace QLKS
             // panelContent
             // 
             this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
-            this.panelContent.Controls.Add(this.pictureLogo1);
+            this.panelContent.Controls.Add(this.pictureBox2);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContent.Location = new System.Drawing.Point(0, 0);
+            this.panelContent.Location = new System.Drawing.Point(225, 65);
             this.panelContent.Name = "panelContent";
-            this.panelContent.Size = new System.Drawing.Size(1234, 661);
+            this.panelContent.Size = new System.Drawing.Size(1009, 596);
             this.panelContent.TabIndex = 10;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(277, 179);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(480, 209);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1234, 661);
+            this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelSideMenu);
-            this.Controls.Add(this.panelContent);
             this.Name = "FrmMain";
             this.Text = "FrmMain";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panelSideMenu.ResumeLayout(false);
@@ -564,6 +563,7 @@ namespace QLKS
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureLogo2)).EndInit();
             this.panelContent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -575,7 +575,6 @@ namespace QLKS
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.PictureBox pictureLogo1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSignOut;
         private System.Windows.Forms.Button button1;
@@ -602,5 +601,6 @@ namespace QLKS
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureLogo2;
         private System.Windows.Forms.Panel panelContent;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
