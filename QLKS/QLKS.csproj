@@ -148,6 +148,12 @@
       <DependentUpon>HOADON.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="HomeDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeDashBoard.Designer.cs">
+      <DependentUpon>HomeDashBoard.cs</DependentUpon>
+    </Compile>
     <Compile Include="KetNoi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -198,6 +204,9 @@
     <EmbeddedResource Include="HOADON.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>HOADON.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeDashBoard.resx">
+      <DependentUpon>HomeDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
