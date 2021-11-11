@@ -127,8 +127,8 @@ namespace QLKS
 
         private void btnTraPhong_Click(object sender, EventArgs e)
         {
-            openChildForm(new Frm_THANHTOAN());
-            hideSubMenu();
+            //openChildForm(new Frm_THANHTOAN());
+            //hideSubMenu();
         }
 
         private void btnQLDP_Click(object sender, EventArgs e)
