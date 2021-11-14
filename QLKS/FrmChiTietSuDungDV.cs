@@ -85,7 +85,7 @@ namespace QLKS
             string sql = "";
             if (cbTenDV.Checked)
             {
-                sql = "dv.ten_dv = '" + cboTenDV.Text + "' and ";
+                sql = "dv.ten = '" + cboTenDV.Text + "' and ";
             }
             if (cbTenPhong.Checked)
             {

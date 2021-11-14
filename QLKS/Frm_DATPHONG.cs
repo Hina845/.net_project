@@ -48,9 +48,11 @@ namespace QLKS
             decimal c = txt_sophong.Value;
             int b = decimal.ToInt32(a);
             int d = decimal.ToInt32(c);
-
+            string ngayDen = txt_ngayden.Value.ToString("yyyy/MM/dd");
+            string ngayDi = txt_ngaydi.Value.ToString("yyyy/MM/dd");
+            string ngayDat = txt_ngaydat.Value.ToString("yyyy/MM/dd");
             //them dl vao bang DAT_PHONG
-            String sql = "Insert into DAT_PHONG VALUES("+txt_datphong.Value+","+txt_khachang.Value+","+txt_nhanvienthuchien.Text+","+txt_songuoi.Value+","+txt_sophong.Value+",'"+txt_ngaydat.Value+"','"+txt_ngayden.Value+"','"+txt_ngaydi.Value+"')";
+            String sql = "Insert into DAT_PHONG VALUES("+txt_datphong.Value+","+txt_khachang.Value+","+txt_nhanvienthuchien.Text+","+txt_songuoi.Value+","+txt_sophong.Value+",'"+ngayDat+"','"+ngayDen+"','"+ngayDi+"')";
             Console.WriteLine(sql);
             kn.ThucThi(sql);
                 

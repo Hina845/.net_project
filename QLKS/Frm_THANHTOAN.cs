@@ -88,7 +88,8 @@ namespace QLKS
 
         private void btn_xuathoadon_Click(object sender, EventArgs e)
         {
-            String sqlinsert = "insert into [HOA_DON_PHONG] values("+txt_IDhoadon.Value+ ","+txt_nguoixacnhan.Text+ ","+txt_IDphong.Value+ ",'"+txt_lydo.Text+ "',"+lb_hientongtien.Text+ ",'"+txt_ngaythanhtoan.Value+"');";
+            string ngayThanhToan = txt_ngaythanhtoan.Value.ToString("yyyy/MM/dd");
+            String sqlinsert = "insert into [HOA_DON_PHONG] values("+txt_IDhoadon.Value+ ","+txt_nguoixacnhan.Text+ ","+txt_IDphong.Value+ ",'"+txt_lydo.Text+ "',"+lb_hientongtien.Text+ ",'"+ngayThanhToan+"');";
             kn.ThucThi(sqlinsert);
             String sqlUpdate = "update phong set trang_thai = 'Trong'";
             MessageBox.Show("Đang xuất hóa đơn, vui lòng đợi!");

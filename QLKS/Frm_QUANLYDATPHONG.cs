@@ -132,14 +132,7 @@ namespace QLKS
             txt_khachang.DataBindings.Clear();
             txt_khachang.DataBindings.Add("Value", dtaID, "ID");
             // sau đó chuyển datagreatview thành bảng đặt phòng chỉ chứa khách hàng có mã ID tìm kiếm
-            dataGridView1.DataSource = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN,"
-                                                           + " dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN,"
-                                                           + " dp.NGAY_DI as NGAY_DI,"
-                                                           + " dkp.ID_PHONG as ID_Phong"
-                                                            + "FROM DAT_PHONG as dp"
-                                                            + "INNER JOIN DANG_KY_PHONG as dkp"
-                                                            + "ON dp.ID = dkp.ID_DAT_PHONG"
-                                                            + "where ID_KHACH_HANG = " + txt_khachang.Value);
+            dataGridView1.DataSource = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN, dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN, dp.NGAY_DI as NGAY_DI,  dkp.ID_PHONG as ID_Phong FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG where DATEDIFF(DAY,GETDATE(),NGAY_DI)<=0 AND ID_Phong NOT IN(SELECT ID_PHONG FROM HOA_DON_PHONG) and dp.id_khach_hang ="+txt_khachang.Value+"");
             //hiện thị dữ liệu lên textbox 
             HIENTHI_DULIEU2();
             btn_SUA.Enabled = false;
@@ -189,7 +182,7 @@ namespace QLKS
             txt_khachang.DataBindings.Clear();
             txt_khachang.DataBindings.Add("Value", dtaID, "ID");
             // sau đó chuyển datagreatview thành bảng đặt phòng chỉ chứa khách hàng có mã ID tìm kiếm
-            dataGridView1.DataSource = kn.Lay_DulieuBang("SELECT * from DAT_PHONG where ID_KHACH_HANG = " + txt_khachang.Value);
+            dataGridView1.DataSource = kn.Lay_DulieuBang("SELECT dp.ID as ID, dp.ID_KHACH_HANG as ID_KHACH_HANG, dp.ID_NGUOI_THUC_HIEN as ID_NGUOI_THUC_HIEN, dp.SO_NGUOI as SO_NGUOI, dp.SO_PHONG as SO_PHONG, dp.NGAY_DAT as NGAY_DAT, dp.NGAY_DEN as NGAY_DEN, dp.NGAY_DI as NGAY_DI,  dkp.ID_PHONG as ID_Phong FROM DAT_PHONG as dp INNER JOIN DANG_KY_PHONG as dkp ON dp.ID = dkp.ID_DAT_PHONG where  dp.id_khach_hang =" + txt_khachang.Value + "");
             //hiện thị dữ liệu lên textbox 
             HIENTHI_DULIEU2();
             btn_SUA.Enabled = true;

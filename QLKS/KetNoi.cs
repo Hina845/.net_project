@@ -20,7 +20,7 @@ namespace QLKS
 
 
 
-            string strKetNoi = @"Data Source=DESKTOP-PHN9FM3\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
+            string strKetNoi = @"Data Source=TVH\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
 
 
 
