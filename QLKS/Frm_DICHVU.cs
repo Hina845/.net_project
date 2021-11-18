@@ -72,8 +72,9 @@ namespace QLKS
             {
                 String sql_Luu = "insert into DICH_VU values (" + txt_ID.Value + ",'" + txt_Ten.Text + "', " + txt_Gia.Text + ");";
                 kn.ThucThi(sql_Luu);
-                BANG_DICHVU();
+               
             }
+            BANG_DICHVU();
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -83,8 +84,9 @@ namespace QLKS
             {
                 string sql_sua = "update  DICH_VU set TEN = '" + txt_Ten.Text + "' , GIA=" + txt_Gia.Text + " where id=" + txt_ID.Text;
                 kn.ThucThi(sql_sua);
-                BANG_DICHVU();
+                
             }
+            BANG_DICHVU();
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
@@ -94,8 +96,9 @@ namespace QLKS
             {
                 String sql_Xoa = "DELETE  FROM [DICH_VU] WHERE ID=" + txt_ID.Value + ";";
                 kn.ThucThi(sql_Xoa);
-                BANG_DICHVU();
+                
             }
+            BANG_DICHVU();
         }
 
         private void txt_ID_TextChanged(object sender, EventArgs e)

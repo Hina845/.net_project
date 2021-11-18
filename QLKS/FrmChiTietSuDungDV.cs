@@ -100,7 +100,6 @@ namespace QLKS
             DataTable dta = new DataTable();
             dta = kn.Lay_DulieuBang(tim);
             dtaGridChiTietSD.DataSource = dta;
-            Console.WriteLine(tim);
         }
 
         private void btnTaiLai_Click(object sender, EventArgs e)

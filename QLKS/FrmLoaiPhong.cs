@@ -69,9 +69,10 @@ namespace QLKS
                 string sql_luu;
                 sql_luu = "INSERT INTO LOAI_PHONG VALUES (" + txtma_loai.Value + " , '" + txtten_loai.Text + "' , " + txtso_nguoi.Value + " , " + txtgia.Value + " , '" + txtmo_ta.Text + "')";
                 kn.ThucThi(sql_luu);
-                Bang_LoaiPhong();
+               
                 MessageBox.Show("Đã lưu thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
+            Bang_LoaiPhong();
         }
 
         private void btnsua_Click(object sender, EventArgs e)
@@ -83,9 +84,10 @@ namespace QLKS
                 string sql_sua;
                 sql_sua = "UPDATE LOAI_PHONG SET TEN = '" + txtten_loai.Text + "' , SO_NGUOI = " + txtso_nguoi.Value + " , GIA = " + txtgia.Value + " , MO_TA = '" + txtmo_ta.Text + "' WHERE ID = " + txtma_loai.Value + " ";
                 kn.ThucThi(sql_sua);
-                Bang_LoaiPhong();
+                
                 MessageBox.Show("Đã sửa thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
+            Bang_LoaiPhong();
         }
 
         private void btnxoa_Click(object sender, EventArgs e)
@@ -97,9 +99,10 @@ namespace QLKS
                 string sql_xoa;
                 sql_xoa = "DELETE LOAI_PHONG WHERE ID = " + txtma_loai.Value + " ";
                 kn.ThucThi(sql_xoa);
-                Bang_LoaiPhong();
+                
                 MessageBox.Show("Đã xóa thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
+            Bang_LoaiPhong();
         }
 
         private void btnthoat_Click(object sender, EventArgs e)

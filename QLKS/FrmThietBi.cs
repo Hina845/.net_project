@@ -81,10 +81,11 @@ namespace QLKS
             {
                 String sql = @"insert into thiet_bi values(" + nmrID.Value + ",'" + txtTen.Text + "'," + nmrGia.Value + ")";
                 kn.ThucThi(sql);
-                BANG_THIET_BI();
+                
                 btnLuu.Enabled = false;
             }
                 
+            BANG_THIET_BI();
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -94,9 +95,9 @@ namespace QLKS
             {
                 String sql = @"update Thiet_Bi set ten='" + txtTen.Text + "',gia=" + nmrGia.Value + " where id=" + nmrID.Value + "";
                 kn.ThucThi(sql);
-                BANG_THIET_BI();
-            }
                 
+            }
+            BANG_THIET_BI();
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -106,9 +107,10 @@ namespace QLKS
             {
                 String sql = @"Delete from Thiet_Bi where id='" + nmrID.Value + "'";
                 kn.ThucThi(sql);
-                BANG_THIET_BI();
-            }
                 
+            }
+            BANG_THIET_BI();
+
         }
     }
 }

@@ -52,7 +52,7 @@ namespace QLKS
                 string sql = "insert into chi_tiet_su_dung_dv values(" + nmrID.Value + "," + nmrIDphong.Value + "," + nmrIDdichvu.Value + ",'" + ngay + "')";
                 kn.ThucThi(sql);
                 btnLuu.Enabled = false;
-            }            
+            }
         }
 
         private void btnTaoMoi_Click(object sender, EventArgs e)

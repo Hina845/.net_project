@@ -152,9 +152,9 @@ namespace QLKS
                 sql_update = "update PHONG set TRANG_THAI='Trong' where ID IN(select ID_PHONG from DANG_KY_PHONG where ID_DAT_PHONG='" + numDatphong.Value + "')";
                 kn.ThucThi(sql_update);
                 kn.ThucThi(sql_xoa);
-                Bang_DANGKYPHONG();
+                
             }
-            
+            Bang_DANGKYPHONG();
 
         }
 
