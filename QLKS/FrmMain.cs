@@ -203,5 +203,11 @@ namespace QLKS
         {
             Application.Exit();
         }
+
+        private void buttonQlphong_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Frm_Phong());
+            hideSubMenu();
+        }
     }
 }

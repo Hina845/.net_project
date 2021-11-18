@@ -61,6 +61,7 @@ namespace QLKS
             this.pictureLogo2 = new System.Windows.Forms.PictureBox();
             this.panelContent = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.buttonQlphong = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -144,7 +145,7 @@ namespace QLKS
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.btnExit.Location = new System.Drawing.Point(0, 639);
+            this.btnExit.Location = new System.Drawing.Point(0, 674);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
             this.btnExit.Size = new System.Drawing.Size(208, 45);
@@ -161,7 +162,7 @@ namespace QLKS
             this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignOut.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.btnSignOut.Location = new System.Drawing.Point(0, 594);
+            this.btnSignOut.Location = new System.Drawing.Point(0, 629);
             this.btnSignOut.Name = "btnSignOut";
             this.btnSignOut.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
             this.btnSignOut.Size = new System.Drawing.Size(208, 45);
@@ -199,7 +200,7 @@ namespace QLKS
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 684);
+            this.panel2.Location = new System.Drawing.Point(0, 719);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(208, 259);
             this.panel2.TabIndex = 14;
@@ -233,7 +234,7 @@ namespace QLKS
             this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKhachHang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.btnKhachHang.Location = new System.Drawing.Point(0, 549);
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 584);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
             this.btnKhachHang.Size = new System.Drawing.Size(208, 45);
@@ -249,7 +250,7 @@ namespace QLKS
             this.panelTBSubMenu.Controls.Add(this.btnCTTB);
             this.panelTBSubMenu.Controls.Add(this.btnQLTB);
             this.panelTBSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTBSubMenu.Location = new System.Drawing.Point(0, 471);
+            this.panelTBSubMenu.Location = new System.Drawing.Point(0, 506);
             this.panelTBSubMenu.Name = "panelTBSubMenu";
             this.panelTBSubMenu.Size = new System.Drawing.Size(208, 78);
             this.panelTBSubMenu.TabIndex = 10;
@@ -295,7 +296,7 @@ namespace QLKS
             this.btnThietBi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThietBi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThietBi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.btnThietBi.Location = new System.Drawing.Point(0, 426);
+            this.btnThietBi.Location = new System.Drawing.Point(0, 461);
             this.btnThietBi.Name = "btnThietBi";
             this.btnThietBi.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
             this.btnThietBi.Size = new System.Drawing.Size(208, 45);
@@ -312,7 +313,7 @@ namespace QLKS
             this.panelDVSubMenu.Controls.Add(this.btnCTSDDV);
             this.panelDVSubMenu.Controls.Add(this.btnQLDV);
             this.panelDVSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelDVSubMenu.Location = new System.Drawing.Point(0, 313);
+            this.panelDVSubMenu.Location = new System.Drawing.Point(0, 348);
             this.panelDVSubMenu.Name = "panelDVSubMenu";
             this.panelDVSubMenu.Size = new System.Drawing.Size(208, 113);
             this.panelDVSubMenu.TabIndex = 8;
@@ -375,7 +376,7 @@ namespace QLKS
             this.btnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDichVu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDichVu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.btnDichVu.Location = new System.Drawing.Point(0, 268);
+            this.btnDichVu.Location = new System.Drawing.Point(0, 303);
             this.btnDichVu.Name = "btnDichVu";
             this.btnDichVu.Padding = new System.Windows.Forms.Padding(20, 0, 10, 0);
             this.btnDichVu.Size = new System.Drawing.Size(208, 45);
@@ -388,13 +389,14 @@ namespace QLKS
             // panelPhongSubMenu
             // 
             this.panelPhongSubMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(204)))), ((int)(((byte)(85)))));
+            this.panelPhongSubMenu.Controls.Add(this.buttonQlphong);
             this.panelPhongSubMenu.Controls.Add(this.btnQLLP);
             this.panelPhongSubMenu.Controls.Add(this.btnQLDP);
             this.panelPhongSubMenu.Controls.Add(this.btnDatPhong);
             this.panelPhongSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelPhongSubMenu.Location = new System.Drawing.Point(0, 155);
             this.panelPhongSubMenu.Name = "panelPhongSubMenu";
-            this.panelPhongSubMenu.Size = new System.Drawing.Size(208, 113);
+            this.panelPhongSubMenu.Size = new System.Drawing.Size(208, 148);
             this.panelPhongSubMenu.TabIndex = 6;
             // 
             // btnQLLP
@@ -523,6 +525,23 @@ namespace QLKS
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // buttonQlphong
+            // 
+            this.buttonQlphong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonQlphong.FlatAppearance.BorderSize = 0;
+            this.buttonQlphong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQlphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQlphong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.buttonQlphong.Location = new System.Drawing.Point(0, 105);
+            this.buttonQlphong.Name = "buttonQlphong";
+            this.buttonQlphong.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
+            this.buttonQlphong.Size = new System.Drawing.Size(208, 37);
+            this.buttonQlphong.TabIndex = 10;
+            this.buttonQlphong.Text = "Quản lý phòng";
+            this.buttonQlphong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQlphong.UseVisualStyleBackColor = true;
+            this.buttonQlphong.Click += new System.EventHandler(this.buttonQlphong_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -582,5 +601,6 @@ namespace QLKS
         private System.Windows.Forms.PictureBox pictureLogo2;
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button buttonQlphong;
     }
 }

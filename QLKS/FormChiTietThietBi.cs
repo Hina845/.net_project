@@ -93,8 +93,8 @@ namespace QLKS
             {
                 string sql = "update CHI_TIET_THIET_BI set id_thiet_bi=" + (cboTenTb.SelectedIndex + 1) + ",id_phong='" + cboIdPhong.Text + "',trang_thai='" + cboTrangThai.Text + "' where id='" + txtID_CTTB.Text + "'";
                 kn.ThucThi(sql);
-                BANG_CHITIETTHIETBI();
             }
+            BANG_CHITIETTHIETBI();
         }
 
         private void btnChen_Click(object sender, EventArgs e)
@@ -104,8 +104,9 @@ namespace QLKS
             {
                 string sql = "insert into CHI_TIET_THIET_BI values('" + txtID_CTTB.Value + "'," + (cboTenTb.SelectedIndex + 1) + ",'" + (cboIdPhong.Text) + "','" + cboTrangThai.Text + "')";
                 kn.ThucThi(sql);
-                BANG_CHITIETTHIETBI();
-            }          
+                
+            }
+            BANG_CHITIETTHIETBI();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -120,8 +121,8 @@ namespace QLKS
             {
                 string sql = "delete from CHI_TIET_THIET_BI where id='" + txtID_CTTB.Value + "'";
                 kn.ThucThi(sql);
-                BANG_CHITIETTHIETBI();
             }
+            BANG_CHITIETTHIETBI();
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)
