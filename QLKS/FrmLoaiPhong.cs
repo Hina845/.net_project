@@ -62,6 +62,7 @@ namespace QLKS
 
         private void btnluu_Click(object sender, EventArgs e)
         {
+            Console.WriteLine("clicked");
             DialogResult thongbao;
             thongbao = MessageBox.Show("Bạn có chắc chắn muốn lưu không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             if (thongbao == DialogResult.OK)

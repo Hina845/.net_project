@@ -32,6 +32,14 @@ namespace QLKS
             txt_khachang.Value = ID;
             //chọn ra ID lớn nhất ở bảng DAT_PHONG
             DataTable dtaID = kn.Lay_DulieuBang("select MAX(ID) AS ID from DAT_PHONG ");
+            if (dtaID.Rows.Count > 0)
+            {
+                txt_datphong.DataBindings.Clear();
+            }
+            else
+            {
+                txt_datphong.Value = 0;
+            }
             //tự động nhảy ID đặt phòng
             txt_datphong.DataBindings.Add("Value", dtaID, "ID");
             txt_datphong.Value = txt_datphong.Value + 1;

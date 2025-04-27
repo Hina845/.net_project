@@ -52,6 +52,7 @@ namespace QLKS
             this.btnQLDV = new System.Windows.Forms.Button();
             this.btnDichVu = new System.Windows.Forms.Button();
             this.panelPhongSubMenu = new System.Windows.Forms.Panel();
+            this.buttonQlphong = new System.Windows.Forms.Button();
             this.btnQLLP = new System.Windows.Forms.Button();
             this.btnQLDP = new System.Windows.Forms.Button();
             this.btnDatPhong = new System.Windows.Forms.Button();
@@ -61,7 +62,6 @@ namespace QLKS
             this.pictureLogo2 = new System.Windows.Forms.PictureBox();
             this.panelContent = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.buttonQlphong = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -399,6 +399,23 @@ namespace QLKS
             this.panelPhongSubMenu.Size = new System.Drawing.Size(208, 148);
             this.panelPhongSubMenu.TabIndex = 6;
             // 
+            // buttonQlphong
+            // 
+            this.buttonQlphong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonQlphong.FlatAppearance.BorderSize = 0;
+            this.buttonQlphong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonQlphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonQlphong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.buttonQlphong.Location = new System.Drawing.Point(0, 105);
+            this.buttonQlphong.Name = "buttonQlphong";
+            this.buttonQlphong.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
+            this.buttonQlphong.Size = new System.Drawing.Size(208, 37);
+            this.buttonQlphong.TabIndex = 10;
+            this.buttonQlphong.Text = "Quản lý phòng";
+            this.buttonQlphong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonQlphong.UseVisualStyleBackColor = true;
+            this.buttonQlphong.Click += new System.EventHandler(this.buttonQlphong_Click);
+            // 
             // btnQLLP
             // 
             this.btnQLLP.Dock = System.Windows.Forms.DockStyle.Top;
@@ -513,6 +530,7 @@ namespace QLKS
             this.panelContent.Name = "panelContent";
             this.panelContent.Size = new System.Drawing.Size(1009, 596);
             this.panelContent.TabIndex = 10;
+            this.panelContent.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContent_Paint);
             // 
             // pictureBox2
             // 
@@ -524,23 +542,6 @@ namespace QLKS
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
-            // 
-            // buttonQlphong
-            // 
-            this.buttonQlphong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.buttonQlphong.FlatAppearance.BorderSize = 0;
-            this.buttonQlphong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonQlphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonQlphong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.buttonQlphong.Location = new System.Drawing.Point(0, 105);
-            this.buttonQlphong.Name = "buttonQlphong";
-            this.buttonQlphong.Padding = new System.Windows.Forms.Padding(30, 0, 10, 0);
-            this.buttonQlphong.Size = new System.Drawing.Size(208, 37);
-            this.buttonQlphong.TabIndex = 10;
-            this.buttonQlphong.Text = "Quản lý phòng";
-            this.buttonQlphong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonQlphong.UseVisualStyleBackColor = true;
-            this.buttonQlphong.Click += new System.EventHandler(this.buttonQlphong_Click);
             // 
             // FrmMain
             // 

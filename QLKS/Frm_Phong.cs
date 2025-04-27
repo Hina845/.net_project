@@ -23,7 +23,6 @@ namespace QLKS
             DataTable dta = new DataTable();
             dta = kn.Lay_DulieuBang(sql);
             dataGridPhong.DataSource = dta;
-            btnluu.Enabled = false;
             HienThiDuLieu();
         }
         private void HienThiDuLieu()

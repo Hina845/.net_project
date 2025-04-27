@@ -17,15 +17,8 @@ namespace QLKS
         public void KetNoi_Dulieu()
         {
 
+            string strKetNoi = @"Server=db18255.public.databaseasp.net; Database=db18255; User Id=db18255; Password=Br6%w5+J?hD7; Encrypt=True; TrustServerCertificate=True; MultipleActiveResultSets=True;";
 
-
-
-            string strKetNoi = @"Data Source=TVH\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=True";
-
-
-
-
-            
             cnn = new SqlConnection(strKetNoi);
             cnn.Open();
         }

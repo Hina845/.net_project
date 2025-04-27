@@ -209,5 +209,10 @@ namespace QLKS
             openChildForm(new Frm_Phong());
             hideSubMenu();
         }
+
+        private void panelContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
