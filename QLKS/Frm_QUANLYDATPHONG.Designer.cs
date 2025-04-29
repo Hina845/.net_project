@@ -318,9 +318,10 @@ namespace QLKS
             // btn_TimKiemIDkh
             // 
             this.btn_TimKiemIDkh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_TimKiemIDkh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_TimKiemIDkh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_TimKiemIDkh.FlatAppearance.BorderSize = 0;
             this.btn_TimKiemIDkh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TimKiemIDkh.ForeColor = System.Drawing.Color.White;
             this.btn_TimKiemIDkh.Location = new System.Drawing.Point(756, 7);
             this.btn_TimKiemIDkh.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btn_TimKiemIDkh.Name = "btn_TimKiemIDkh";
@@ -333,9 +334,10 @@ namespace QLKS
             // btn_loc_kh_hethan
             // 
             this.btn_loc_kh_hethan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_loc_kh_hethan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_loc_kh_hethan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_loc_kh_hethan.FlatAppearance.BorderSize = 0;
             this.btn_loc_kh_hethan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_loc_kh_hethan.ForeColor = System.Drawing.Color.White;
             this.btn_loc_kh_hethan.Location = new System.Drawing.Point(661, 241);
             this.btn_loc_kh_hethan.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btn_loc_kh_hethan.Name = "btn_loc_kh_hethan";
@@ -348,9 +350,10 @@ namespace QLKS
             // btn_bangdatphong
             // 
             this.btn_bangdatphong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_bangdatphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_bangdatphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_bangdatphong.FlatAppearance.BorderSize = 0;
             this.btn_bangdatphong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_bangdatphong.ForeColor = System.Drawing.Color.White;
             this.btn_bangdatphong.Location = new System.Drawing.Point(518, 241);
             this.btn_bangdatphong.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btn_bangdatphong.Name = "btn_bangdatphong";
@@ -363,9 +366,10 @@ namespace QLKS
             // btn_timkiemdatphong
             // 
             this.btn_timkiemdatphong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_timkiemdatphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_timkiemdatphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_timkiemdatphong.FlatAppearance.BorderSize = 0;
             this.btn_timkiemdatphong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_timkiemdatphong.ForeColor = System.Drawing.Color.White;
             this.btn_timkiemdatphong.Location = new System.Drawing.Point(756, 41);
             this.btn_timkiemdatphong.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btn_timkiemdatphong.Name = "btn_timkiemdatphong";
@@ -378,10 +382,11 @@ namespace QLKS
             // btn_ThanhToan
             // 
             this.btn_ThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_ThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_ThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_ThanhToan.Enabled = false;
             this.btn_ThanhToan.FlatAppearance.BorderSize = 0;
             this.btn_ThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ThanhToan.ForeColor = System.Drawing.Color.White;
             this.btn_ThanhToan.Location = new System.Drawing.Point(844, 241);
             this.btn_ThanhToan.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.btn_ThanhToan.Name = "btn_ThanhToan";

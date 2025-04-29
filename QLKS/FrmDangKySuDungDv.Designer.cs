@@ -29,9 +29,9 @@ namespace QLKS
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtaGridDichVu = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -62,35 +62,35 @@ namespace QLKS
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtaGridDichVu.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaGridDichVu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtaGridDichVu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtaGridDichVu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtaGridDichVu.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtaGridDichVu.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtaGridDichVu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
             this.dtaGridDichVu.Location = new System.Drawing.Point(44, 213);
-            this.dtaGridDichVu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtaGridDichVu.Margin = new System.Windows.Forms.Padding(4);
             this.dtaGridDichVu.Name = "dtaGridDichVu";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaGridDichVu.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtaGridDichVu.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtaGridDichVu.Size = new System.Drawing.Size(903, 323);
             this.dtaGridDichVu.TabIndex = 1;
             // 
@@ -107,13 +107,14 @@ namespace QLKS
             // 
             // btnLuu
             // 
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btnLuu.Enabled = false;
             this.btnLuu.FlatAppearance.BorderSize = 0;
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Location = new System.Drawing.Point(858, 157);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(89, 44);
             this.btnLuu.TabIndex = 19;
@@ -123,12 +124,13 @@ namespace QLKS
             // 
             // btnTaoMoi
             // 
-            this.btnTaoMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnTaoMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btnTaoMoi.FlatAppearance.BorderSize = 0;
             this.btnTaoMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaoMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnTaoMoi.ForeColor = System.Drawing.Color.White;
             this.btnTaoMoi.Location = new System.Drawing.Point(858, 105);
-            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTaoMoi.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaoMoi.Name = "btnTaoMoi";
             this.btnTaoMoi.Size = new System.Drawing.Size(89, 44);
             this.btnTaoMoi.TabIndex = 18;
@@ -151,7 +153,7 @@ namespace QLKS
             // 
             this.nmrID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.nmrID.Location = new System.Drawing.Point(280, 30);
-            this.nmrID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmrID.Margin = new System.Windows.Forms.Padding(4);
             this.nmrID.Name = "nmrID";
             this.nmrID.Size = new System.Drawing.Size(180, 26);
             this.nmrID.TabIndex = 24;
@@ -164,7 +166,7 @@ namespace QLKS
             this.dateNgayDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNgayDat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateNgayDat.Location = new System.Drawing.Point(581, 69);
-            this.dateNgayDat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateNgayDat.Margin = new System.Windows.Forms.Padding(4);
             this.dateNgayDat.Name = "dateNgayDat";
             this.dateNgayDat.Size = new System.Drawing.Size(178, 26);
             this.dateNgayDat.TabIndex = 25;
@@ -207,7 +209,7 @@ namespace QLKS
             // 
             this.txtDichVU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtDichVU.Location = new System.Drawing.Point(282, 120);
-            this.txtDichVU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDichVU.Margin = new System.Windows.Forms.Padding(4);
             this.txtDichVU.Name = "txtDichVU";
             this.txtDichVU.Size = new System.Drawing.Size(477, 26);
             this.txtDichVU.TabIndex = 30;
@@ -216,7 +218,7 @@ namespace QLKS
             // 
             this.nmrIDphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.nmrIDphong.Location = new System.Drawing.Point(579, 30);
-            this.nmrIDphong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmrIDphong.Margin = new System.Windows.Forms.Padding(4);
             this.nmrIDphong.Name = "nmrIDphong";
             this.nmrIDphong.Size = new System.Drawing.Size(180, 26);
             this.nmrIDphong.TabIndex = 31;
@@ -225,7 +227,7 @@ namespace QLKS
             // 
             this.nmrIDdichvu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.nmrIDdichvu.Location = new System.Drawing.Point(282, 72);
-            this.nmrIDdichvu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmrIDdichvu.Margin = new System.Windows.Forms.Padding(4);
             this.nmrIDdichvu.Name = "nmrIDdichvu";
             this.nmrIDdichvu.Size = new System.Drawing.Size(180, 26);
             this.nmrIDdichvu.TabIndex = 32;
@@ -291,7 +293,7 @@ namespace QLKS
             this.Controls.Add(this.dtaGridDichVu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_DangKySuDungDv";
             this.Text = "ĐĂNG KÝ SỬ DỤNG DỊCH VỤ";
             this.Load += new System.EventHandler(this.Frm_DangKySuDungDv_Load);

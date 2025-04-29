@@ -115,7 +115,7 @@ namespace QLKS
             // 
             this.txtten_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtten_loai.Location = new System.Drawing.Point(182, 46);
-            this.txtten_loai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtten_loai.Margin = new System.Windows.Forms.Padding(4);
             this.txtten_loai.Name = "txtten_loai";
             this.txtten_loai.Size = new System.Drawing.Size(599, 26);
             this.txtten_loai.TabIndex = 2;
@@ -124,7 +124,7 @@ namespace QLKS
             // 
             this.txtmo_ta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmo_ta.Location = new System.Drawing.Point(58, 176);
-            this.txtmo_ta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtmo_ta.Margin = new System.Windows.Forms.Padding(4);
             this.txtmo_ta.Name = "txtmo_ta";
             this.txtmo_ta.Size = new System.Drawing.Size(723, 26);
             this.txtmo_ta.TabIndex = 2;
@@ -133,7 +133,7 @@ namespace QLKS
             // 
             this.txtma_loai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtma_loai.Location = new System.Drawing.Point(58, 46);
-            this.txtma_loai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtma_loai.Margin = new System.Windows.Forms.Padding(4);
             this.txtma_loai.Name = "txtma_loai";
             this.txtma_loai.Size = new System.Drawing.Size(99, 26);
             this.txtma_loai.TabIndex = 3;
@@ -142,7 +142,7 @@ namespace QLKS
             // 
             this.txtso_nguoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtso_nguoi.Location = new System.Drawing.Point(58, 109);
-            this.txtso_nguoi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtso_nguoi.Margin = new System.Windows.Forms.Padding(4);
             this.txtso_nguoi.Name = "txtso_nguoi";
             this.txtso_nguoi.Size = new System.Drawing.Size(191, 26);
             this.txtso_nguoi.TabIndex = 3;
@@ -156,7 +156,7 @@ namespace QLKS
             0,
             0});
             this.txtgia.Location = new System.Drawing.Point(272, 109);
-            this.txtgia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtgia.Margin = new System.Windows.Forms.Padding(4);
             this.txtgia.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -168,12 +168,13 @@ namespace QLKS
             // 
             // btntao_moi
             // 
-            this.btntao_moi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btntao_moi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btntao_moi.FlatAppearance.BorderSize = 0;
             this.btntao_moi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btntao_moi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntao_moi.ForeColor = System.Drawing.Color.White;
             this.btntao_moi.Location = new System.Drawing.Point(876, 43);
-            this.btntao_moi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btntao_moi.Margin = new System.Windows.Forms.Padding(4);
             this.btntao_moi.Name = "btntao_moi";
             this.btntao_moi.Size = new System.Drawing.Size(91, 42);
             this.btntao_moi.TabIndex = 4;
@@ -183,12 +184,13 @@ namespace QLKS
             // 
             // btnluu
             // 
-            this.btnluu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnluu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btnluu.FlatAppearance.BorderSize = 0;
             this.btnluu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnluu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnluu.ForeColor = System.Drawing.Color.White;
             this.btnluu.Location = new System.Drawing.Point(876, 93);
-            this.btnluu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnluu.Margin = new System.Windows.Forms.Padding(4);
             this.btnluu.Name = "btnluu";
             this.btnluu.Size = new System.Drawing.Size(91, 42);
             this.btnluu.TabIndex = 4;
@@ -198,12 +200,13 @@ namespace QLKS
             // 
             // btnsua
             // 
-            this.btnsua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnsua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btnsua.FlatAppearance.BorderSize = 0;
             this.btnsua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsua.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsua.ForeColor = System.Drawing.Color.White;
             this.btnsua.Location = new System.Drawing.Point(876, 143);
-            this.btnsua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(91, 42);
             this.btnsua.TabIndex = 4;
@@ -213,12 +216,13 @@ namespace QLKS
             // 
             // btnxoa
             // 
-            this.btnxoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnxoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btnxoa.FlatAppearance.BorderSize = 0;
             this.btnxoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnxoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnxoa.ForeColor = System.Drawing.Color.White;
             this.btnxoa.Location = new System.Drawing.Point(876, 193);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(91, 42);
             this.btnxoa.TabIndex = 4;
@@ -251,7 +255,7 @@ namespace QLKS
             this.dataGridLoaiPhong.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridLoaiPhong.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
             this.dataGridLoaiPhong.Location = new System.Drawing.Point(23, 266);
-            this.dataGridLoaiPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridLoaiPhong.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridLoaiPhong.Name = "dataGridLoaiPhong";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
@@ -306,7 +310,7 @@ namespace QLKS
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmLoaiPhong";
             this.Text = "QUẢN LÝ LOẠI PHÒNG";
             this.Load += new System.EventHandler(this.FrmLoaiPhong_Load);

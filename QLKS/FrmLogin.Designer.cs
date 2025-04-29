@@ -38,9 +38,10 @@ namespace QLKS
             // 
             // txtDangNhap
             // 
-            this.txtDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.txtDangNhap.BackColor = System.Drawing.Color.White;
             this.txtDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDangNhap.ForeColor = System.Drawing.Color.Black;
             this.txtDangNhap.Location = new System.Drawing.Point(106, 430);
             this.txtDangNhap.Name = "txtDangNhap";
             this.txtDangNhap.Size = new System.Drawing.Size(260, 19);
@@ -51,10 +52,10 @@ namespace QLKS
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.txtMatKhau.BackColor = System.Drawing.Color.White;
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.txtMatKhau.ForeColor = System.Drawing.Color.Black;
             this.txtMatKhau.Location = new System.Drawing.Point(106, 483);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(260, 19);
@@ -67,28 +68,30 @@ namespace QLKS
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
-            this.btnDangNhap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDangNhap.BackgroundImage")));
+            this.btnDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
             this.btnDangNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDangNhap.FlatAppearance.BorderSize = 0;
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangNhap.ForeColor = System.Drawing.Color.White;
             this.btnDangNhap.Location = new System.Drawing.Point(151, 541);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(165, 41);
             this.btnDangNhap.TabIndex = 5;
+            this.btnDangNhap.Text = "LOG IN";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnThoat.BackColor = System.Drawing.Color.Transparent;
             this.btnThoat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnThoat.BackgroundImage")));
             this.btnThoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnThoat.FlatAppearance.BorderSize = 0;
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(429, 12);
+            this.btnThoat.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.Location = new System.Drawing.Point(418, 12);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(20, 20);
             this.btnThoat.TabIndex = 6;
@@ -101,7 +104,7 @@ namespace QLKS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(461, 614);
+            this.ClientSize = new System.Drawing.Size(450, 614);
             this.ControlBox = false;
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);

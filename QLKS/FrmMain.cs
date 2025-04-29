@@ -106,13 +106,6 @@ namespace QLKS
             btnCloseChildForm.Visible = false;
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            activeButton(sender);
-            openChildForm(new Form1());
-            hideSubMenu();
-        }
-
         private void btnPhong_Click(object sender, EventArgs e)
         {
             activeButton(sender);

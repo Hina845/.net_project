@@ -60,12 +60,13 @@ namespace QLKS
             // btnTaiLai
             // 
             this.btnTaiLai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTaiLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnTaiLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btnTaiLai.FlatAppearance.BorderSize = 0;
             this.btnTaiLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTaiLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnTaiLai.ForeColor = System.Drawing.Color.White;
             this.btnTaiLai.Location = new System.Drawing.Point(843, 317);
-            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaiLai.Name = "btnTaiLai";
             this.btnTaiLai.Size = new System.Drawing.Size(120, 50);
             this.btnTaiLai.TabIndex = 44;
@@ -80,7 +81,7 @@ namespace QLKS
             this.cboIdPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboIdPhong.FormattingEnabled = true;
             this.cboIdPhong.Location = new System.Drawing.Point(514, 44);
-            this.cboIdPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboIdPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cboIdPhong.Name = "cboIdPhong";
             this.cboIdPhong.Size = new System.Drawing.Size(210, 28);
             this.cboIdPhong.TabIndex = 43;
@@ -91,7 +92,7 @@ namespace QLKS
             this.cbTenDV.AutoSize = true;
             this.cbTenDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbTenDV.Location = new System.Drawing.Point(442, 29);
-            this.cbTenDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTenDV.Margin = new System.Windows.Forms.Padding(4);
             this.cbTenDV.Name = "cbTenDV";
             this.cbTenDV.Size = new System.Drawing.Size(108, 24);
             this.cbTenDV.TabIndex = 42;
@@ -104,7 +105,7 @@ namespace QLKS
             this.cbNgayDung.AutoSize = true;
             this.cbNgayDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbNgayDung.Location = new System.Drawing.Point(684, 31);
-            this.cbNgayDung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbNgayDung.Margin = new System.Windows.Forms.Padding(4);
             this.cbNgayDung.Name = "cbNgayDung";
             this.cbNgayDung.Size = new System.Drawing.Size(104, 24);
             this.cbNgayDung.TabIndex = 41;
@@ -117,7 +118,7 @@ namespace QLKS
             this.cbTenPhong.AutoSize = true;
             this.cbTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbTenPhong.Location = new System.Drawing.Point(202, 29);
-            this.cbTenPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTenPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cbTenPhong.Name = "cbTenPhong";
             this.cbTenPhong.Size = new System.Drawing.Size(104, 24);
             this.cbTenPhong.TabIndex = 40;
@@ -129,7 +130,7 @@ namespace QLKS
             this.txtID_CTSD.Enabled = false;
             this.txtID_CTSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID_CTSD.Location = new System.Drawing.Point(201, 46);
-            this.txtID_CTSD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtID_CTSD.Margin = new System.Windows.Forms.Padding(4);
             this.txtID_CTSD.Name = "txtID_CTSD";
             this.txtID_CTSD.Size = new System.Drawing.Size(210, 26);
             this.txtID_CTSD.TabIndex = 39;
@@ -140,7 +141,7 @@ namespace QLKS
             this.cboTenDV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTenDV.FormattingEnabled = true;
             this.cboTenDV.Location = new System.Drawing.Point(442, 55);
-            this.cboTenDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTenDV.Margin = new System.Windows.Forms.Padding(4);
             this.cboTenDV.Name = "cboTenDV";
             this.cboTenDV.Size = new System.Drawing.Size(210, 28);
             this.cboTenDV.TabIndex = 37;
@@ -150,7 +151,7 @@ namespace QLKS
             this.cboTenPhong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboTenPhong.FormattingEnabled = true;
             this.cboTenPhong.Location = new System.Drawing.Point(201, 55);
-            this.cboTenPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTenPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cboTenPhong.Name = "cboTenPhong";
             this.cboTenPhong.Size = new System.Drawing.Size(210, 28);
             this.cboTenPhong.TabIndex = 36;
@@ -181,12 +182,13 @@ namespace QLKS
             // btnTimKiem
             // 
             this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btnTimKiem.FlatAppearance.BorderSize = 0;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Location = new System.Drawing.Point(843, 259);
-            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(120, 50);
             this.btnTimKiem.TabIndex = 33;
@@ -203,7 +205,7 @@ namespace QLKS
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Location = new System.Drawing.Point(843, 375);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(120, 38);
             this.btnXoa.TabIndex = 31;
@@ -236,7 +238,7 @@ namespace QLKS
             this.dtaGridChiTietSD.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtaGridChiTietSD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
             this.dtaGridChiTietSD.Location = new System.Drawing.Point(31, 259);
-            this.dtaGridChiTietSD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtaGridChiTietSD.Margin = new System.Windows.Forms.Padding(4);
             this.dtaGridChiTietSD.Name = "dtaGridChiTietSD";
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
@@ -258,7 +260,7 @@ namespace QLKS
             this.dateNgayDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNgayDat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateNgayDat.Location = new System.Drawing.Point(684, 57);
-            this.dateNgayDat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateNgayDat.Margin = new System.Windows.Forms.Padding(4);
             this.dateNgayDat.Name = "dateNgayDat";
             this.dateNgayDat.Size = new System.Drawing.Size(210, 26);
             this.dateNgayDat.TabIndex = 45;
@@ -349,7 +351,7 @@ namespace QLKS
             this.Controls.Add(this.dtaGridChiTietSD);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmChiTietSuDungDV";
             this.Text = "CHI TIẾT SỬ DỤNG DỊCH VỤ";
             this.Load += new System.EventHandler(this.FrmChiTietSuDungDV_Load);

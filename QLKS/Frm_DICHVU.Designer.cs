@@ -92,9 +92,10 @@ namespace QLKS
             // btn_TaoMoi
             // 
             this.btn_TaoMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_TaoMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_TaoMoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_TaoMoi.FlatAppearance.BorderSize = 0;
             this.btn_TaoMoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_TaoMoi.ForeColor = System.Drawing.Color.White;
             this.btn_TaoMoi.Location = new System.Drawing.Point(815, 44);
             this.btn_TaoMoi.Name = "btn_TaoMoi";
             this.btn_TaoMoi.Size = new System.Drawing.Size(94, 47);
@@ -106,10 +107,11 @@ namespace QLKS
             // btn_Luu
             // 
             this.btn_Luu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_Luu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_Luu.Enabled = false;
             this.btn_Luu.FlatAppearance.BorderSize = 0;
             this.btn_Luu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Luu.ForeColor = System.Drawing.Color.White;
             this.btn_Luu.Location = new System.Drawing.Point(815, 97);
             this.btn_Luu.Name = "btn_Luu";
             this.btn_Luu.Size = new System.Drawing.Size(94, 47);
@@ -121,9 +123,10 @@ namespace QLKS
             // btn_Sua
             // 
             this.btn_Sua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_Sua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_Sua.FlatAppearance.BorderSize = 0;
             this.btn_Sua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Sua.ForeColor = System.Drawing.Color.White;
             this.btn_Sua.Location = new System.Drawing.Point(815, 150);
             this.btn_Sua.Name = "btn_Sua";
             this.btn_Sua.Size = new System.Drawing.Size(94, 47);
@@ -135,9 +138,10 @@ namespace QLKS
             // btn_Xoa
             // 
             this.btn_Xoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_Xoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_Xoa.FlatAppearance.BorderSize = 0;
             this.btn_Xoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Xoa.ForeColor = System.Drawing.Color.White;
             this.btn_Xoa.Location = new System.Drawing.Point(815, 203);
             this.btn_Xoa.Name = "btn_Xoa";
             this.btn_Xoa.Size = new System.Drawing.Size(94, 47);
@@ -226,7 +230,7 @@ namespace QLKS
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ID.Location = new System.Drawing.Point(211, 85);
-            this.txt_ID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_ID.Margin = new System.Windows.Forms.Padding(4);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(476, 29);
             this.txt_ID.TabIndex = 13;

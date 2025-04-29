@@ -49,8 +49,8 @@ namespace QLKS
             this.btn_thoat = new System.Windows.Forms.Button();
             this.txt_nhanvienthuchien = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.txt_khachang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_datphong)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_songuoi)).BeginInit();
@@ -201,10 +201,11 @@ namespace QLKS
             // btn_chitietdatphong
             // 
             this.btn_chitietdatphong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_chitietdatphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.btn_chitietdatphong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
             this.btn_chitietdatphong.FlatAppearance.BorderSize = 0;
             this.btn_chitietdatphong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_chitietdatphong.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_chitietdatphong.ForeColor = System.Drawing.Color.White;
             this.btn_chitietdatphong.Location = new System.Drawing.Point(780, 437);
             this.btn_chitietdatphong.Name = "btn_chitietdatphong";
             this.btn_chitietdatphong.Size = new System.Drawing.Size(96, 36);
@@ -261,16 +262,6 @@ namespace QLKS
             this.panel1.Size = new System.Drawing.Size(847, 311);
             this.panel1.TabIndex = 20;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(20, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 51);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Đặt phòng";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
@@ -280,6 +271,16 @@ namespace QLKS
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(847, 10);
             this.panel2.TabIndex = 20;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(20, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(229, 51);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Đặt phòng";
             // 
             // Frm_DATPHONG
             // 
