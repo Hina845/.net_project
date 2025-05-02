@@ -83,35 +83,24 @@ namespace QLKS
 
         private void btnDangky_Click(object sender, EventArgs e)
         {
-            
-
-            
-
-            if (numSophong.Value == 0)
+            numSophong.Value = numSophong.Value - 1;
+            if (numSophong.Value <= 0)
             {
                 DialogResult thongbao;
                 thongbao = MessageBox.Show("Đã đăng ký phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (thongbao == DialogResult.OK) { this.Close(); }
             }
-            else
-            {
-                numSophong.Value = numSophong.Value - 1;
-                string sql_update;
-                sql_update = "UPDATE PHONG SET TRANG_THAI='Ban' where ID= " + numPhong.Value;
-                kn.ThucThi(sql_update);
+            string sql_update;
+            sql_update = "UPDATE PHONG SET TRANG_THAI='Ban' where ID= " + numPhong.Value;
+            kn.ThucThi(sql_update);
                 
-                string sql_luu;
-                sql_luu = "INSERT INTO DANG_KY_PHONG VALUES (" + numID.Text + " , " + numDatphong.Value + ", " + numPhong.Value + ")";
-                kn.ThucThi(sql_luu);
+            string sql_luu;
+            sql_luu = "INSERT INTO DANG_KY_PHONG VALUES (" + numID.Text + " , " + numDatphong.Value + ", " + numPhong.Value + ")";
+            kn.ThucThi(sql_luu);
                 
-                Bang_DANGKYPHONG();
-                numID.Value = numID.Value + 1;
+            Bang_DANGKYPHONG();
+            numID.Value = numID.Value + 1;
 
-            }
-           
-           
-
-            
         }
 
         private void label2_Click(object sender, EventArgs e)

@@ -51,7 +51,7 @@ namespace QLKS
             txt_songayo.Value = songayo;
             // tienphong = dongia x songayo
             String p = txt_dongia.Text;
-            int b = Int32.Parse(p);
+            double b = double.Parse(p);
             double c = b * songayo; //tiền phòng
             txt_tienphong.DataBindings.Add("Text", c, "");
             //hiển thị dataGridview1
@@ -66,7 +66,7 @@ namespace QLKS
                 
                 // hiển thị tổng tiền cần phải thanh toán
                 String dv = txt_tiendichvu.Text;
-                int dv2 = Int32.Parse(dv); //tong tien dich vụ
+                double dv2 = double.Parse(dv); //tong tien dich vụ
                 double tongtien = dv2 + c;
                 lb_hientongtien.DataBindings.Clear();
                 lb_hientongtien.DataBindings.Add("Text", tongtien, "");

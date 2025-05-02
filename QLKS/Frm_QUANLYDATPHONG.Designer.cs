@@ -356,7 +356,6 @@ namespace QLKS
             // 
             this.btn_ThanhToan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_ThanhToan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
-            this.btn_ThanhToan.Enabled = false;
             this.btn_ThanhToan.FlatAppearance.BorderSize = 0;
             this.btn_ThanhToan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ThanhToan.ForeColor = System.Drawing.Color.White;
