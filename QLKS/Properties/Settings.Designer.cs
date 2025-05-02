@@ -12,7 +12,7 @@ namespace QLKS.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.10.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.13.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,22 +26,22 @@ namespace QLKS.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-N228TL6\\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=T" +
-            "rue")]
-        public string QLKSConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLNCLI11;Data Source=DESKTOP-0LTH8BH;Integrated Security=SSPI;Initial C" +
+            "atalog=QLKS")]
+        public string ConnectionString {
             get {
-                return ((string)(this["QLKSConnectionString"]));
+                return ((string)(this["ConnectionString"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=SQLNCLI11;Data Source=DESKTOP-0LTH8BH;Integrated Security=SSPI;Initial C" +
-            "atalog=QLKS")]
-        public string ConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-N228TL6\\SQLEXPRESS;Initial Catalog=QLKS;Integrated Security=T" +
+            "rue")]
+        public string QLKSConnectionString {
             get {
-                return ((string)(this["ConnectionString"]));
+                return ((string)(this["QLKSConnectionString"]));
             }
         }
     }

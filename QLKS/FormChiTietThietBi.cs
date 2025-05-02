@@ -155,5 +155,10 @@ namespace QLKS
             BANG_CHITIETTHIETBI();
             txtID_CTTB.Enabled = false;
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

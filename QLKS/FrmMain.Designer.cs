@@ -37,7 +37,6 @@ namespace QLKS
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btnKhachHang = new System.Windows.Forms.Button();
             this.panelTBSubMenu = new System.Windows.Forms.Panel();
@@ -55,19 +54,20 @@ namespace QLKS
             this.btnQLDP = new System.Windows.Forms.Button();
             this.btnDatPhong = new System.Windows.Forms.Button();
             this.btnPhong = new System.Windows.Forms.Button();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.pictureLogo2 = new System.Windows.Forms.PictureBox();
             this.panelContent = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureLogo2 = new System.Windows.Forms.PictureBox();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
             this.panelTBSubMenu.SuspendLayout();
             this.panelDVSubMenu.SuspendLayout();
             this.panelPhongSubMenu.SuspendLayout();
-            this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo2)).BeginInit();
             this.panelContent.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo2)).BeginInit();
+            this.panelLogo.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnUser
@@ -169,19 +169,10 @@ namespace QLKS
             this.btnSignOut.UseVisualStyleBackColor = false;
             this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 674);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(208, 259);
-            this.panel2.TabIndex = 14;
-            // 
             // panelSideMenu
             // 
             this.panelSideMenu.AutoScroll = true;
-            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(192)))), ((int)(((byte)(41)))));
+            this.panelSideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
             this.panelSideMenu.Controls.Add(this.panel2);
             this.panelSideMenu.Controls.Add(this.btnExit);
             this.panelSideMenu.Controls.Add(this.btnSignOut);
@@ -469,26 +460,6 @@ namespace QLKS
             this.btnPhong.UseVisualStyleBackColor = false;
             this.btnPhong.Click += new System.EventHandler(this.btnPhong_Click);
             // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
-            this.panelLogo.Controls.Add(this.pictureLogo2);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(208, 65);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // pictureLogo2
-            // 
-            this.pictureLogo2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureLogo2.BackgroundImage")));
-            this.pictureLogo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureLogo2.Location = new System.Drawing.Point(35, 9);
-            this.pictureLogo2.Name = "pictureLogo2";
-            this.pictureLogo2.Size = new System.Drawing.Size(147, 46);
-            this.pictureLogo2.TabIndex = 0;
-            this.pictureLogo2.TabStop = false;
-            // 
             // panelContent
             // 
             this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(74)))));
@@ -512,6 +483,36 @@ namespace QLKS
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 674);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(208, 259);
+            this.panel2.TabIndex = 14;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // pictureLogo2
+            // 
+            this.pictureLogo2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureLogo2.BackgroundImage")));
+            this.pictureLogo2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureLogo2.Location = new System.Drawing.Point(35, 9);
+            this.pictureLogo2.Name = "pictureLogo2";
+            this.pictureLogo2.Size = new System.Drawing.Size(147, 46);
+            this.pictureLogo2.TabIndex = 0;
+            this.pictureLogo2.TabStop = false;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(92)))), ((int)(((byte)(212)))));
+            this.panelLogo.Controls.Add(this.pictureLogo2);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(208, 65);
+            this.panelLogo.TabIndex = 0;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -529,10 +530,10 @@ namespace QLKS
             this.panelTBSubMenu.ResumeLayout(false);
             this.panelDVSubMenu.ResumeLayout(false);
             this.panelPhongSubMenu.ResumeLayout(false);
-            this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo2)).EndInit();
             this.panelContent.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureLogo2)).EndInit();
+            this.panelLogo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -546,7 +547,6 @@ namespace QLKS
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnSignOut;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelSideMenu;
         private System.Windows.Forms.Button btnKhachHang;
         private System.Windows.Forms.Panel panelTBSubMenu;
@@ -563,10 +563,11 @@ namespace QLKS
         private System.Windows.Forms.Button btnQLDP;
         private System.Windows.Forms.Button btnDatPhong;
         private System.Windows.Forms.Button btnPhong;
-        private System.Windows.Forms.Panel panelLogo;
-        private System.Windows.Forms.PictureBox pictureLogo2;
         private System.Windows.Forms.Panel panelContent;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button buttonQlphong;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelLogo;
+        private System.Windows.Forms.PictureBox pictureLogo2;
     }
 }
