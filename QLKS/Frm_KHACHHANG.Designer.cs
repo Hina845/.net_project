@@ -39,8 +39,8 @@ namespace QLKS
             this.txtID = new System.Windows.Forms.NumericUpDown();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
-            this.txtGmail = new System.Windows.Forms.TextBox();
             this.txtCMT = new System.Windows.Forms.TextBox();
+            this.txtGMAIL = new System.Windows.Forms.TextBox();
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtNation = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
@@ -154,23 +154,23 @@ namespace QLKS
             this.txtPhone.Size = new System.Drawing.Size(344, 26);
             this.txtPhone.TabIndex = 4;
             // 
-            // txtGmail
-            // 
-            this.txtGmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtGmail.Location = new System.Drawing.Point(418, 104);
-            this.txtGmail.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtGmail.Name = "txtGmail";
-            this.txtGmail.Size = new System.Drawing.Size(344, 26);
-            this.txtGmail.TabIndex = 5;
-            // 
             // txtCMT
             // 
             this.txtCMT.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCMT.Location = new System.Drawing.Point(54, 225);
+            this.txtCMT.Location = new System.Drawing.Point(418, 104);
             this.txtCMT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtCMT.Name = "txtCMT";
-            this.txtCMT.Size = new System.Drawing.Size(408, 26);
-            this.txtCMT.TabIndex = 6;
+            this.txtCMT.Size = new System.Drawing.Size(344, 26);
+            this.txtCMT.TabIndex = 5;
+            // 
+            // txtGMAIL
+            // 
+            this.txtGMAIL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGMAIL.Location = new System.Drawing.Point(54, 225);
+            this.txtGMAIL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtGMAIL.Name = "txtGMAIL";
+            this.txtGMAIL.Size = new System.Drawing.Size(408, 26);
+            this.txtGMAIL.TabIndex = 6;
             // 
             // txtAddress
             // 
@@ -296,9 +296,9 @@ namespace QLKS
             this.panel1.Controls.Add(this.lblID);
             this.panel1.Controls.Add(this.lblName);
             this.panel1.Controls.Add(this.txtID);
-            this.panel1.Controls.Add(this.txtGmail);
-            this.panel1.Controls.Add(this.txtNation);
             this.panel1.Controls.Add(this.txtCMT);
+            this.panel1.Controls.Add(this.txtNation);
+            this.panel1.Controls.Add(this.txtGMAIL);
             this.panel1.Controls.Add(this.lblPhone);
             this.panel1.Controls.Add(this.lblNation);
             this.panel1.Controls.Add(this.txtAddress);
@@ -357,8 +357,8 @@ namespace QLKS
         private System.Windows.Forms.NumericUpDown txtID;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPhone;
-        private System.Windows.Forms.TextBox txtGmail;
         private System.Windows.Forms.TextBox txtCMT;
+        private System.Windows.Forms.TextBox txtGMAIL;
         private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtNation;
         private System.Windows.Forms.Button btnXoa;

@@ -57,11 +57,11 @@ namespace QLKS
             txtPhone.DataBindings.Clear();
             txtPhone.DataBindings.Add("Text", dataGridKhachHang.DataSource, "SDT");
 
-            txtGmail.DataBindings.Clear();
-            txtGmail.DataBindings.Add("Text", dataGridKhachHang.DataSource, "GMAIL");
-
             txtCMT.DataBindings.Clear();
-            txtCMT.DataBindings.Add("Text", dataGridKhachHang.DataSource, "CMND");
+            txtCMT.DataBindings.Add("Text", dataGridKhachHang.DataSource, "GMAIL");
+
+            txtGMAIL.DataBindings.Clear();
+            txtGMAIL.DataBindings.Add("Text", dataGridKhachHang.DataSource, "CMND");
 
             txtAddress.DataBindings.Clear();
             txtAddress.DataBindings.Add("Text", dataGridKhachHang.DataSource, "DIA_CHI");
@@ -85,11 +85,11 @@ namespace QLKS
             txtPhone.DataBindings.Clear();
             txtPhone.DataBindings.Add("Text", dta1, "SDT");
 
-            txtGmail.DataBindings.Clear();
-            txtGmail.DataBindings.Add("Text", dta1, "GMAIL");
-
             txtCMT.DataBindings.Clear();
-            txtCMT.DataBindings.Add("Text", dta1, "CMND");
+            txtCMT.DataBindings.Add("Text", dta1, "GMAIL");
+
+            txtGMAIL.DataBindings.Clear();
+            txtGMAIL.DataBindings.Add("Text", dta1, "CMND");
 
             txtAddress.DataBindings.Clear();
             txtAddress.DataBindings.Add("Text", dta1, "DIA_CHI");
@@ -106,8 +106,8 @@ namespace QLKS
             txtID.Value = txtID.Value + 1;
             txtName.Text = "";
             txtPhone.Text = "";
+            txtGMAIL.Text = "";
             txtCMT.Text = "";
-            txtGmail.Text = "";
             txtAddress.Text = "";
             txtNation.Text = "";
             txtID.Focus();
@@ -125,7 +125,7 @@ namespace QLKS
             if (thongbao == DialogResult.OK)
             {
                 string sql_luu;
-                sql_luu = "INSERT INTO KHACH_HANG VALUES (" + txtID.Value + " , '" + txtName.Text + "' , '" + txtPhone.Text + "' , '" + txtGmail.Text + "' , '" + txtCMT.Text + "' , '" + txtAddress.Text + "' , '" + txtNation.Text + "')";
+                sql_luu = "INSERT INTO KHACH_HANG VALUES (" + txtID.Value + " , '" + txtName.Text + "' , '" + txtPhone.Text + "' , '" + txtGMAIL.Text + "' , '" + txtCMT.Text + "' , '" + txtAddress.Text + "' , '" + txtNation.Text + "')";
                 kn.ThucThi(sql_luu);
                 
                 MessageBox.Show("Đã lưu thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
@@ -143,7 +143,7 @@ namespace QLKS
             if (thongbao == DialogResult.OK)
             {
                 string sql_sua;
-                sql_sua = "UPDATE KHACH_HANG SET TEN = '" + txtName.Text + "' , SDT = '" + txtPhone.Text + "' , GMAIL = '" + txtGmail.Text + "' , CMND = '" + txtCMT.Text + "' , DIA_CHI = '" + txtAddress.Text + "' ,QUOC_GIA = '" + txtNation.Text + "' WHERE ID = " + txtID.Value + " ";
+                sql_sua = "UPDATE KHACH_HANG SET TEN = '" + txtName.Text + "' , SDT = '" + txtPhone.Text + "' , GMAIL = '" + txtCMT.Text + "' , CMND = '" + txtGMAIL.Text + "' , DIA_CHI = '" + txtAddress.Text + "' ,QUOC_GIA = '" + txtNation.Text + "' WHERE ID = " + txtID.Value + " ";
                 kn.ThucThi(sql_sua);
                 
                 MessageBox.Show("Đã sửa thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
