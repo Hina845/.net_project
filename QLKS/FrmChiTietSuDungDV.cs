@@ -95,7 +95,15 @@ namespace QLKS
             {
                 sql += " ctsd.ngay_dung= '" + ngay + "' and ";
             }
-            sql = sql.Substring(0, sql.Length - 4);
+            if (!string.IsNullOrEmpty(sql) && sql.Length >= 4)
+            {
+                sql = sql.Substring(0, sql.Length - 4);
+            }
+            else
+            {
+                MessageBox.Show("Hãy chọn ít nhất một bộ lọc.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             string tim = "select ctsd.ID, p.id as ID_PHONG, p.ten as TEN_PHONG, dv.ten as TEN_DV, ctsd.NGAY_DUNG from (phong as p inner join CHI_TIET_SU_DUNG_DV as ctsd on ctsd.ID_PHONG = p.ID) inner join DICH_VU as dv on dv.ID=ctsd.ID_DICH_VU where " + sql + "";
             DataTable dta = new DataTable();
             dta = kn.Lay_DulieuBang(tim);

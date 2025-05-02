@@ -39,10 +39,26 @@ namespace QLKS
 
         public void ThucThi(string sql)
         {
-            KetNoi_Dulieu();
-            cmd = new SqlCommand(sql, cnn);
-            cmd.ExecuteNonQuery();
-            HuyKetNoi();
+            try
+            {
+                KetNoi_Dulieu();
+                cmd = new SqlCommand(sql, cnn);
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                Console.WriteLine("SQL Error: " + ex.Message);
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occurred: " + ex.Message);
+                throw;
+            }
+            finally
+            {
+                HuyKetNoi();
+            }
         }
     }
 }
