@@ -83,12 +83,15 @@ namespace QLKS
 
         private void btnDangky_Click(object sender, EventArgs e)
         {
-            numSophong.Value = numSophong.Value - 1;
-            if (numSophong.Value <= 0)
+            int check = (int)(numSophong.Value - 1);
+            if (check <= 0)
             {
                 DialogResult thongbao;
                 thongbao = MessageBox.Show("Đã đăng ký phòng thành công", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
                 if (thongbao == DialogResult.OK) { this.Close(); }
+            } else
+            {
+                numSophong.Value = numSophong.Value - 1;
             }
             string sql_update;
             sql_update = "UPDATE PHONG SET TRANG_THAI='Ban' where ID= " + numPhong.Value;

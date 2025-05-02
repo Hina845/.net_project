@@ -52,7 +52,7 @@ namespace QLKS
             // tienphong = dongia x songayo
             String p = txt_dongia.Text;
             double b = double.Parse(p);
-            double c = b * songayo; //tiền phòng
+            double c = b; //tiền phòng
             txt_tienphong.DataBindings.Add("Text", c, "");
             //hiển thị dataGridview1
             DataTable dtatiendichvu = kn.Lay_DulieuBang("SELECT ctdv.ID_PHONG , ctdv.ID_DICH_VU,ctdv.NGAY_DUNG,dv.TEN,dv.GIA FROM CHI_TIET_SU_DUNG_DV as ctdv INNER JOIN DICH_VU as dv ON ctdv.ID_DICH_VU=dv.ID where ctdv.ID_PHONG =" + txt_IDphong.Value+";");
@@ -64,7 +64,6 @@ namespace QLKS
             if (txt_tiendichvu.Text != "")
             {
                 
-                // hiển thị tổng tiền cần phải thanh toán
                 String dv = txt_tiendichvu.Text;
                 double dv2 = double.Parse(dv); //tong tien dich vụ
                 double tongtien = dv2 + c;
@@ -88,15 +87,26 @@ namespace QLKS
 
         private void btn_xuathoadon_Click(object sender, EventArgs e)
         {
-            string ngayThanhToan = txt_ngaythanhtoan.Value.ToString("yyyy/MM/dd");
-            String sqlinsert = "insert into [HOA_DON_PHONG] values("+txt_IDhoadon.Value+ ","+txt_nguoixacnhan.Text+ ","+txt_IDphong.Value+ ",'"+txt_lydo.Text+ "',"+lb_hientongtien.Text+ ",'"+ngayThanhToan+"');";
-            kn.ThucThi(sqlinsert);
-            String sqlUpdate = "update phong set trang_thai = 'Trong'";
-            MessageBox.Show("Đang xuất hóa đơn, vui lòng đợi!");
-            int idHoaDon = decimal.ToInt32(txt_IDhoadon.Value);
-            FrmBaoCao baocao = new FrmBaoCao(idHoaDon);
-            baocao.Show();
-            this.Hide();
+            try
+            {
+                string ngayThanhToan = txt_ngaythanhtoan.Value.ToString("yyyy/MM/dd");
+                String sqlinsert = "insert into HOA_DON_PHONG (ID, ID_NGUOI_XAC_NHAN, ID_PHONG, LY_DO, TONG_TIEN, NGAY_THANH_TOAN) values (" + txt_IDhoadon.Value + ", '" + txt_nguoixacnhan.Text + "', " + txt_IDphong.Value + ", '" + txt_lydo.Text + "', " + lb_hientongtien.Text + ", '" + ngayThanhToan + "');";
+                kn.ThucThi(sqlinsert);
+
+                String sqlUpdateCustomer = "update DAT_PHONG set NGAY_DI = DATEADD(MONTH, 1, NGAY_DI) where ID = " + txt_IDdatphong.Value + ";";
+                kn.ThucThi(sqlUpdateCustomer);
+
+                MessageBox.Show("Đang xuất hóa đơn, vui lòng đợi!");
+
+                int idHoaDon = decimal.ToInt32(txt_IDhoadon.Value);
+                FrmBaoCao baocao = new FrmBaoCao(idHoaDon);
+                baocao.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message);
+            }
         }
     }
 }

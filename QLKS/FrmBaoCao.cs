@@ -28,7 +28,8 @@ namespace QLKS
         private void FrmBaoCao_Load(object sender, EventArgs e)
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_DulieuBang("select * from hoa_don_phong where id ="+idHoaDon);
+            Console.WriteLine(idHoaDon);
+            dta = kn.Lay_DulieuBang("select * from hoa_don_phong where id = " + idHoaDon.ToString());
             HOADON bc = new HOADON();
             bc.SetDataSource(dta);
             crvTest.ReportSource=bc;
