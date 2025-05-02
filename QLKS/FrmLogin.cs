@@ -92,5 +92,10 @@ namespace QLKS
                 txtMatKhau.Text = "Password";
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
