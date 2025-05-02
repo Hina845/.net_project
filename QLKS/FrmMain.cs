@@ -42,8 +42,8 @@ namespace QLKS
             {
                 if (previousBtn.GetType() == typeof(Button))
                 {
-                    previousBtn.BackColor = Color.FromArgb(253, 192, 41);
-                    previousBtn.ForeColor = Color.FromArgb(23, 24, 32);
+                    previousBtn.BackColor = Color.FromArgb(0,73,169);
+                    previousBtn.ForeColor = Color.FromArgb(255,255,255);
                     previousBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
@@ -204,6 +204,11 @@ namespace QLKS
         }
 
         private void panelContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
